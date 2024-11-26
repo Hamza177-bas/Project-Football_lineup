@@ -3,8 +3,8 @@ let currentIndex = 0;
 
 
 function showNextImage() {
-    images[currentIndex].classList.remove('opacity-30');
-    images[currentIndex].classList.add('opacity-30');
+    images[currentIndex].classList.remove('opacity-40');
+    images[currentIndex].classList.add('opacity-40');
 
     let oldIndex = currentIndex;
     setTimeout(() => {
@@ -16,7 +16,7 @@ function showNextImage() {
     setTimeout(() => {
         images[currentIndex].classList.remove('hidden');
         setTimeout(() => {
-            images[currentIndex].classList.add('opacity-30');
+            images[currentIndex].classList.add('opacity-40');
             images[currentIndex].classList.remove('opacity-0');
         }, 10);
     }, 500);
