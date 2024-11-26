@@ -11,9 +11,15 @@ body {
   max-width: 30rem;
   overflow-x:auto;
   display: flex;
-
-
+  border:solid 2px rgba(254, 254, 254, 0.454);
+  border-radius: 10px;
 }
 .carosail::-webkit-scrollbar{
   display: none;
+}
+.item{
+  width: 5rem;
+  height: 7rem;
+  background-image: url('/img-fotball/carts-foutbal.png');
+  background-size: contain;
 }
