@@ -7,3 +7,13 @@ body {
 /* .cotch{
   text-shadow: 4px 2px 5px hsl(215, 25%, 91%);
 } */
+.carosail{
+  max-width: 30rem;
+  overflow-x:auto;
+  display: flex;
+
+
+}
+.carosail::-webkit-scrollbar{
+  display: none;
+}

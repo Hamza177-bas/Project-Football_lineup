@@ -3,8 +3,8 @@ let currentIndex = 0;
 
 
 function showNextImage() {
-    images[currentIndex].classList.remove('opacity-60');
-    images[currentIndex].classList.add('opacity-60');
+    images[currentIndex].classList.remove('opacity-40');
+    images[currentIndex].classList.add('opacity-40');
 
     let oldIndex = currentIndex;
     setTimeout(() => {
