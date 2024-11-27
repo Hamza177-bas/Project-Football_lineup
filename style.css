@@ -11,8 +11,10 @@ body {
   max-width: 30rem;
   overflow-x:auto;
   display: flex;
-  border:solid 2px rgba(254, 254, 254, 0.454);
-  border-radius: 10px;
+  border-top: solid 2px white;
+}
+.Reserve{
+  text-shadow: 4px 2px 5px hsl(215, 15%, 71%);
 }
 .carosail::-webkit-scrollbar{
   display: none;
@@ -32,15 +34,15 @@ P{
   right: 2rem;
   opacity: 0.8
 }
-button{
+.btn{
   position: absolute;
-  color: #fff;
+  color: #fffcfc;
   font-size: 4rem;
   bottom: 0.1rem;
   right: 1.5rem;
   opacity: 0.6;
 }
-button:hover{
+.btn:hover{
   color: rgba(211, 239, 53, 0.769);
   bottom: 0.2rem;
 }
