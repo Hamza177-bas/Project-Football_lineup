@@ -46,13 +46,13 @@
         </div>
     </section>
     <section>
-        <div class="w-[100%] h-auto bg-[#0c0707] pl-[2rem]j items-center">
+        <div class="w-[100%] h-auto bg-[#0c0707] pl-[2rem] items-center relative">
             <div class="flex justify-between">
-                <img src="img-fotball/drabo.png" alt="" class="w-[18rem] h-[8rem] mt-[1.5rem] ml-[2rem] opacity-40" />
-                <h2 class="text-[#fff] text-[2rem] flex items-center pl-[5rem] opacity-70">
+                <img src="img-fotball/drabo.png" alt="" class="w-[18rem] h-[8rem] mt-[1.5rem] ml-[2rem] opacity-40 max-md:w-[8rem]" />
+                <h2 class="text-[#fff] text-[2rem] flex items-center pl-[5rem] opacity-70 max-md:text-[0.5rem]">
                     Welcome To The Argentina National
                 </h2>
-                <img src="img-fotball/gif2.gif" alt="" class="w-[18rem] h-[10rem] mt-[0.5rem] opacity-40"/>
+                <img src="img-fotball/gif2.gif" alt="" class="w-[18rem] h-[10rem] mt-[0.5rem] opacity-40 max-md:hidden"/>
             </div>
                 <div class="flex justify-center h-[500px] relative">
                     <img src="img-fotball/mal3ab.png "alt="" class="opacity-40"/>
@@ -60,53 +60,53 @@
                         <div class="flex gap-[1rem] justify-center">
                             <div class="w-[5rem] item">
                                 <p>RW</p>
-                                <button class="btn">+</button>
+                                <button class="btn" onclick="showatac()">+</button>
                             </div>
                             <div class="w-[5rem] item">
                                 <p>ST</p>
-                                <button class="btn">+</button>
+                                <button class="btn" onclick="showatac()">+</button>
                             </div>
                         </div>
                         <div class="flex gap-[2rem]">
                             <div class="w-[5rem] item">
                                 <p>CM</p>
-                                <button class="btn">+</button>
+                                <button class="btn" onclick="sowmilieu()">+</button>
                             </div>
                             <div class="w-[5rem] item">
                                 <p>CM</p>
-                                <button class="btn">+</button>
+                                <button class="btn" onclick="sowmilieu()">+</button>
                             </div>
                             <div class="w-[5rem] item">
                                 <p>CM</p>
-                                <button class="btn">+</button>
+                                <button class="btn" onclick="sowmilieu()">+</button>
                             </div>
                             <div class="w-[5rem] item">
                                 <p>LW</p>
-                                <button class="btn">+</button>
+                                <button class="btn" onclick="showatac()">+</button>
                             </div>
                         </div>
                         <div class="flex gap-[2rem]">
                             <div class="w-[5rem] item">
                                 <p>LB</p>
-                                <button class="btn">+</button>
+                                <button class="btn" onclick="sowdéfense()">+</button>
                             </div>
                             <div class="w-[5rem] item">
                                 <p>CB</p>
-                                <button class="btn">+</button>
+                                <button class="btn" onclick="sowdéfense()">+</button>
                             </div>
                             <div class="w-[5rem] item">
                                 <p>CB</p>
-                                <button class="btn">+</button>
+                                <button class="btn" onclick="sowdéfense()">+</button>
                             </div>
                             <div class="w-[5rem] item">
                                 <p>RB</p>
-                                <button class="btn">+</button>
+                                <button class="btn" onclick="sowdéfense()">+</button>
                             </div>
                         </div>
                         <div class="flex gap-[2rem] justify-center">
                             <div class="w-[5rem] item">
                                 <p>GK</p>
-                                <button class="btn">+</button>
+                                <button class="btn" onclick="sowgarde()">+</button>
                             </div>
                         </div>
                     </div>
@@ -116,44 +116,45 @@
                     </div>
                 </div>
                 <h2 class="text-[#fff] text-center my-[1rem] opacity-80 Reserve">Players Reserve Bank</h2>
-                     <div class="carosail mx-auto">
+                     <div class="carosail m-auto flex">
 
                         <div class="w-[5rem] item">
                             <p>GK</p>
-                                <button class="btn">+</button>
+                                <button class="btn" onclick="sowgarde()">+</button>
                         </div>
 
                             <div class="w-[5rem] item">
                                 <p>CB</p>
-                                <button class="btn">+</button>
+                                <button class="btn" onclick="sowdéfense()">+</button>
                                 
                             </div>
                         <div class="w-[5rem] item">
                             <p>ST</p>
-                                <button class="btn">+</button>
+                                <button class="btn" onclick="showatac()">+</button>
                             </div>
                             
                         <div class="w-[5rem] item">
                             <p>CM</p>
-                                <button class="btn">+</button>
+                                <button class="btn" onclick="sowmilieu()">+</button>
                             
                         </div>
                         <div class="w-[5rem] item">
                             
                             <p>CM</p>
-                                <button class="btn">+</button>
+                                <button class="btn" onclick="sowmilieu()">+</button>
                         </div>
                         <div class="w-[5rem] item">
                             
                             <p>RB</p>
-                                <button class="btn">+</button>
+                                <button class="btn" onclick="sowdéfense()">+</button>
                         </div>
+                        
                         </div>
-                
-                    <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero adipisci cumque deleniti repellat ab modi, voluptatum excepturi ipsam voluptates eligendi a, nobis dolorum. Nobis libero perspiciatis itaque, rem distinctio adipisci illum voluptatem molestias! Deleniti dolorum quos vel perspiciatis soluta aperiam veritatis architecto. Consectetur eaque ex modi porro praesentium ab error vitae officia, quos magni, iusto facilis, illo nesciunt laboriosam? Omnis praesentium commodi numquam quaerat delectus quia. Non ex eligendi velit est earum optio commodi natus veniam nulla officia pariatur nam id deserunt minima modi, delectus dolorem dolor iure similique. Exercitationem impedit nisi enim iure odio beatae maxime consectetur voluptates dolorum!</div>
-                        <div class="">
-                            <!-- LW -->
-                            <div class="item w-[5rem] relative">
+                        <div class="text-[#fff] absolute top-[12rem] left-[2rem] cardts flex "></div>
+                    <div class="">
+                        <div class="flex atac ">
+                              <!-- LW -->
+                              <div class="item w-[5rem] relative">
                                 <div class="absolute left-[0.7rem] top-[1.3rem]">
                                     <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80">90</h2>
                                     <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
@@ -221,98 +222,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- GK -->
-                            <div class="item w-[5rem] relative">
-                                <div class="absolute left-[0.7rem] top-[1.3rem]">
-                                    <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80">87</h2>
-                                    <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
-                                    <img src="img-fotball/Aston-Villa-Logo-1990-removebg-preview.png" alt="" class="w-[0.8rem]  opacity-60 ml-[2px]">
-                                </div>
-                                <img src="img-fotball/img-martinez-emiliano-removebg-preview.png" alt="" class="w-[5rem]  absolute bottom-[2.8rem] left-[0.6rem]">
-                                <h2 class="text-[#fff] text-[7px] font-bold absolute left-[1.6rem] top-[0.6rem] opacity-80">Martine</h2>
-                                <p>GK</p>
-                                <div class="flex text-[#fff] text-[5px] absolute bottom-5 right-4 gap-[0.5rem] opacity-80">
-                                    <div>
-                                        <h3>Div :<span>84</span></h3>
-                                        <h3>Han : <span>82</span></h3>
-                                        <h3>Kic : <span>86</span></h3>
-                                    </div>
-                                    <div>
-                                        <h3>Ref : <span>86</span></h3>
-                                        <h3>Spo : <span>56</span></h3>
-                                        <h3>Pos : <span>57</span></h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- CM -->
-                            <div class="item w-[5rem] relative">
-                                <div class="absolute left-[0.7rem] top-[1.3rem]">
-                                    <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80">80</h2>
-                                    <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
-                                    <img src="img-fotball/Atletico-Madrid-Logo-removebg-preview.png" alt="" class="w-[1rem]  opacity-60 ml-[2px]">
-                                </div>
-                                <img src="img-fotball/img-Rodrigo-De-Paul-removebg-preview.png" alt="" class="w-[4.2rem]  absolute bottom-[2.8rem] right-[0.1rem]">
-                                <h2 class="text-[#fff] text-[7px] font-bold absolute left-[1.6rem] top-[0.6rem] opacity-80">Rodrigo</h2>
-                                <p>CM</p>
-                                <div class="flex text-[#fff] text-[5px] absolute bottom-5 right-4 gap-[0.5rem] opacity-80">
-                                    <div>
-                                        <h3>Pac :<span>80</span></h3>
-                                        <h3>Sho : <span>87</span></h3>
-                                        <h3>Pas : <span>90</span></h3>
-                                    </div>
-                                    <div>
-                                        <h3>Dri : <span>94</span></h3>
-                                        <h3>Def : <span>33</span></h3>
-                                        <h3>Phy : <span>64</span></h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- CM -->
-                            <div class="item w-[5rem] relative">
-                                <div class="absolute left-[0.7rem] top-[1.3rem]">
-                                    <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80">81</h2>
-                                    <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
-                                    <img src="img-fotball/Aston-Villa-Logo-1990-removebg-preview.png" alt="" class="w-[0.7rem]  opacity-60 ml-[2px]">
-                                </div>
-                                <img src="img-fotball/IMG-Leandro-Paredes-removebg-preview.png" alt="" class="w-[4rem]  absolute bottom-[2.8rem] right-[0.4rem]">
-                                <h2 class="text-[#fff] text-[7px] font-bold absolute left-[1.6rem] top-[0.6rem] opacity-80">Leandro</h2>
-                                <p>CM</p>
-                                <div class="flex text-[#fff] text-[5px] absolute bottom-5 right-4 gap-[0.5rem] opacity-80">
-                                    <div>
-                                        <h3>Pac :<span>80</span></h3>
-                                        <h3>Sho : <span>87</span></h3>
-                                        <h3>Pas : <span>90</span></h3>
-                                    </div>
-                                    <div>
-                                        <h3>Dri : <span>94</span></h3>
-                                        <h3>Def : <span>33</span></h3>
-                                        <h3>Phy : <span>64</span></h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- CM -->
-                            <div class="item w-[5rem] relative">
-                                <div class="absolute left-[0.7rem] top-[1.3rem]">
-                                    <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80">83</h2>
-                                    <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
-                                    <img src="img-fotball/logo-via-reial-removebg-preview.png" alt="" class="w-[0.7rem]  opacity-60 ml-[2px]">
-                                </div>
-                                <img src="img-fotball/img-Emiliano-Buendía-removebg-preview.png" alt="" class="w-[5rem]  absolute bottom-[2.8rem] left-[0.2rem]">
-                                <h2 class="text-[#fff] text-[7px] font-bold absolute left-[1.6rem] top-[0.6rem] opacity-80">Emiliano</h2>
-                                <p>CM</p>
-                                <div class="flex text-[#fff] text-[5px] absolute bottom-5 right-4 gap-[0.5rem] opacity-80">
-                                    <div>
-                                        <h3>Pac :<span>80</span></h3>
-                                        <h3>Sho : <span>80</span></h3>
-                                        <h3>Pas : <span>90</span></h3>
-                                    </div>
-                                    <div>
-                                        <h3>Dri : <span>86</span></h3>
-                                        <h3>Def : <span>33</span></h3>
-                                        <h3>Phy : <span>65</span></h3>
-                                    </div>
-                                </div>
-                            </div>
                             <!-- ST -->
                             <div class="item w-[5rem] relative">
                                 <div class="absolute left-[0.7rem] top-[1.3rem]">
@@ -336,100 +245,79 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- GK -->
-                            <div class="item w-[5rem] relative">
-                                <div class="absolute left-[0.7rem] top-[1.3rem]">
-                                    <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80">79</h2>
-                                    <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
-                                    <img src="img-fotball/logo-AS-Roma-removebg-preview.png" alt="" class="w-[0.7rem]  opacity-60 ml-[2px]">
-                                </div>
-                                <img src="img-fotball/img-Juan-Musso-removebg-preview.png" alt="" class="w-[5rem]  absolute bottom-[2.8rem]">
-                                <h2 class="text-[#fff] text-[7px] font-bold absolute left-[1.6rem] top-[0.6rem] opacity-80">Musso</h2>
-                                <p>GK</p>
-                                <div class="flex text-[#fff] text-[5px] absolute bottom-5 right-4 gap-[0.5rem] opacity-80">
-                                    <div>
-                                        <h3>Div :<span>79</span></h3>
-                                        <h3>Han : <span>70</span></h3>
-                                        <h3>Kic : <span>86</span></h3>
-                                    </div>
-                                    <div>
-                                        <h3>Ref : <span>80</span></h3>
-                                        <h3>Spo : <span>56</span></h3>
-                                        <h3>Pos : <span>57</span></h3>
-                                    </div>
-                                </div>
-                            </div>
-                             <!-- cb -->
-                            <div class="item w-[5rem] relative">
+                        </div>
+                        <div class="flex milieu">
+                              <!-- CM -->
+                              <div class="item min-w-105rem] relative">
                                 <div class="absolute left-[0.7rem] top-[1.3rem]">
                                     <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80">80</h2>
                                     <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
-                                    <img src="img-fotball/logo-totenhame-removebg-preview.png" alt="" class="w-[0.7rem]  opacity-60 ml-[2px]">
+                                    <img src="img-fotball/Atletico-Madrid-Logo-removebg-preview.png" alt="" class="w-[1rem]  opacity-60 ml-[2px]">
                                 </div>
-                                <img src="img-fotball/IMG-Cristian-Romero-removebg-preview.png" alt="" class="w-[2.1rem]  absolute bottom-[2.8rem] left-[1.5rem]">
-                                <h2 class="text-[#fff] text-[7px] font-bold absolute left-[1.6rem] top-[0.6rem] opacity-80">Cristian</h2>
-                                <p>CB</p>
+                                <img src="img-fotball/img-Rodrigo-De-Paul-removebg-preview.png" alt="" class="w-[4.2rem]  absolute bottom-[2.8rem] right-[0.1rem]">
+                                <h2 class="text-[#fff] text-[7px] font-bold absolute left-[1.6rem] top-[0.6rem] opacity-80">Rodrigo</h2>
+                                <p>CM</p>
                                 <div class="flex text-[#fff] text-[5px] absolute bottom-5 right-4 gap-[0.5rem] opacity-80">
                                     <div>
-                                        <h3>Pac :<span>85</span></h3>
-                                        <h3>Sho : <span>80</span></h3>
+                                        <h3>Pac :<span>80</span></h3>
+                                        <h3>Sho : <span>87</span></h3>
                                         <h3>Pas : <span>90</span></h3>
                                     </div>
                                     <div>
-                                        <h3>Dri : <span>86</span></h3>
+                                        <h3>Dri : <span>94</span></h3>
                                         <h3>Def : <span>33</span></h3>
-                                        <h3>Phy : <span>65</span></h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- cb -->
-                            <div class="item w-[5rem] relative">
-                                <div class="absolute left-[0.7rem] top-[1.3rem]">
-                                    <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80">85</h2>
-                                    <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
-                                    <img src="img-fotball/LOGO-CLUP-DIMARIA-removebg-preview.png" alt="" class="w-[0.7rem]  opacity-60 ml-[2px]">
-                                </div>
-                                <img src="img-fotball/imgNicolás-Otamendi-removebg-preview.png" alt="" class="w-[2.1rem]  absolute bottom-[2.8rem] left-[1.5rem]">
-                                <h2 class="text-[#fff] text-[7px] font-bold absolute left-[1.6rem] top-[0.6rem] opacity-80">Otamendi</h2>
-                                <p>CB</p>
-                                <div class="flex text-[#fff] text-[5px] absolute bottom-5 right-4 gap-[0.5rem] opacity-80">
-                                    <div>
-                                        <h3>Pac :<span>85</span></h3>
-                                        <h3>Sho : <span>80</span></h3>
-                                        <h3>Pas : <span>90</span></h3>
-                                    </div>
-                                    <div>
-                                        <h3>Dri : <span>86</span></h3>
-                                        <h3>Def : <span>33</span></h3>
-                                        <h3>Phy : <span>65</span></h3>
-                                    </div>
-                                </div>
-                            </div>
-                             <!-- cb -->
-                             <div class="item w-[5rem] relative">
-                                <div class="absolute left-[0.7rem] top-[1.3rem]">
-                                    <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80">85</h2>
-                                    <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
-                                    <img src="img-fotball/logo-ichpilia-removebg-preview.png" alt="" class="w-[0.7rem]  opacity-60 ml-[2px]">
-                                </div>
-                                <img src="img-fotball/IMG-MARCOS-removebg-preview.png" alt="" class="w-[4rem]  absolute bottom-[2.8rem] left-[0.4rem]">
-                                <h2 class="text-[#fff] text-[7px] font-bold absolute left-[1.6rem] top-[0.6rem] opacity-80">MARCOS</h2>
-                                <p>CB</p>
-                                <div class="flex text-[#fff] text-[5px] absolute bottom-5 right-4 gap-[0.5rem] opacity-80">
-                                    <div>
-                                        <h3>Pac :<span>85</span></h3>
-                                        <h3>Sho : <span>80</span></h3>
-                                        <h3>Pas : <span>90</span></h3>
-                                    </div>
-                                    <div>
-                                        <h3>Dri : <span>86</span></h3>
-                                        <h3>Def : <span>33</span></h3>
-                                        <h3>Phy : <span>65</span></h3>
+                                        <h3>Phy : <span>64</span></h3>
                                     </div>
                                 </div>
                             </div>
                             <!-- CM -->
-                            <div class="item w-[5rem] relative">
+                            <div class="item min-w-[10rem] relative">
+                                <div class="absolute left-[0.7rem] top-[1.3rem]">
+                                    <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80">81</h2>
+                                    <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
+                                    <img src="img-fotball/Aston-Villa-Logo-1990-removebg-preview.png" alt="" class="w-[0.7rem]  opacity-60 ml-[2px]">
+                                </div>
+                                <img src="img-fotball/IMG-Leandro-Paredes-removebg-preview.png" alt="" class="w-[4rem]  absolute bottom-[2.8rem] right-[0.4rem]">
+                                <h2 class="text-[#fff] text-[7px] font-bold absolute left-[1.6rem] top-[0.6rem] opacity-80">Leandro</h2>
+                                <p>CM</p>
+                                <div class="flex text-[#fff] text-[5px] absolute bottom-5 right-4 gap-[0.5rem] opacity-80">
+                                    <div>
+                                        <h3>Pac :<span>80</span></h3>
+                                        <h3>Sho : <span>87</span></h3>
+                                        <h3>Pas : <span>90</span></h3>
+                                    </div>
+                                    <div>
+                                        <h3>Dri : <span>94</span></h3>
+                                        <h3>Def : <span>33</span></h3>
+                                        <h3>Phy : <span>64</span></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- CM -->
+                            <div class="item min-w-[10rem] relative">
+                                <div class="absolute left-[0.7rem] top-[1.3rem]">
+                                    <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80">83</h2>
+                                    <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
+                                    <img src="img-fotball/logo-via-reial-removebg-preview.png" alt="" class="w-[0.7rem]  opacity-60 ml-[2px]">
+                                </div>
+                                <img src="img-fotball/img-Emiliano-Buendía-removebg-preview.png" alt="" class="w-[5rem]  absolute bottom-[2.8rem] left-[0.2rem]">
+                                <h2 class="text-[#fff] text-[7px] font-bold absolute left-[1.6rem] top-[0.6rem] opacity-80">Emiliano</h2>
+                                <p>CM</p>
+                                <div class="flex text-[#fff] text-[5px] absolute bottom-5 right-4 gap-[0.5rem] opacity-80">
+                                    <div>
+                                        <h3>Pac :<span>80</span></h3>
+                                        <h3>Sho : <span>80</span></h3>
+                                        <h3>Pas : <span>90</span></h3>
+                                    </div>
+                                    <div>
+                                        <h3>Dri : <span>86</span></h3>
+                                        <h3>Def : <span>33</span></h3>
+                                        <h3>Phy : <span>65</span></h3>
+                                    </div>
+                                </div>
+                            </div>
+                              <!-- CM -->
+                              <div class="item min-w-[10rem] relative">
                                 <div class="absolute left-[0.7rem] top-[1.3rem]">
                                     <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80">86</h2>
                                     <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
@@ -452,7 +340,7 @@
                                 </div>
                             </div>
                             <!-- CM -->
-                            <div class="item w-[5rem] relative">
+                            <div class="item min-w-[10rem] relative">
                                 <div class="absolute left-[0.7rem] top-[1.3rem]">
                                     <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80">79</h2>
                                     <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
@@ -474,8 +362,103 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- LB -->
-                            <div class="item w-[5rem] relative">
+
+                        </div>
+                        <div class="flex défense">
+                            <!-- RB -->
+                            <div class="item  relative">
+                                <div class="absolute left-[0.7rem] top-[1.3rem]">
+                                    <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80">79</h2>
+                                    <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
+                                    <img src="img-fotball/logo-reft-playe-removebg-preview.png" alt="" class="w-[0.7rem]  opacity-60 ml-[2px]">
+                                </div>
+                                <img src="img-fotball/img-Nicolás-Arángelo-removebg-preview.png" alt="" class="w-[2.7rem]  absolute bottom-[3rem] right-[1rem]">
+                                <h2 class="text-[#fff] text-[7px] font-bold absolute left-[1.6rem] top-[0.6rem] opacity-80">Arángelo</h2>
+                                <p>RB</p>
+                                <div class="flex text-[#fff] text-[5px] absolute bottom-5 right-4 gap-[0.5rem] opacity-80">
+                                    <div>
+                                        <h3>Pac :<span>70</span></h3>
+                                        <h3>Sho : <span>80</span></h3>
+                                        <h3>Pas : <span>90</span></h3>
+                                    </div>
+                                    <div>
+                                        <h3>Dri : <span>86</span></h3>
+                                        <h3>Def : <span>33</span></h3>
+                                        <h3>Phy : <span>65</span></h3>
+                                    </div>
+                                </div>
+                            </div>
+                             <!-- cb -->
+                            <div class="item  relative">
+                                <div class="absolute left-[0.7rem] top-[1.3rem]">
+                                    <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80">80</h2>
+                                    <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
+                                    <img src="img-fotball/logo-totenhame-removebg-preview.png" alt="" class="w-[0.7rem]  opacity-60 ml-[2px]">
+                                </div>
+                                <img src="img-fotball/IMG-Cristian-Romero-removebg-preview.png" alt="" class="w-[2.1rem]  absolute bottom-[2.8rem] left-[1.5rem]">
+                                <h2 class="text-[#fff] text-[7px] font-bold absolute left-[1.6rem] top-[0.6rem] opacity-80">Cristian</h2>
+                                <p>CB</p>
+                                <div class="flex text-[#fff] text-[5px] absolute bottom-5 right-4 gap-[0.5rem] opacity-80">
+                                    <div>
+                                        <h3>Pac :<span>85</span></h3>
+                                        <h3>Sho : <span>80</span></h3>
+                                        <h3>Pas : <span>90</span></h3>
+                                    </div>
+                                    <div>
+                                        <h3>Dri : <span>86</span></h3>
+                                        <h3>Def : <span>33</span></h3>
+                                        <h3>Phy : <span>65</span></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- cb -->
+                            <div class="item  relative">
+                                <div class="absolute left-[0.7rem] top-[1.3rem]">
+                                    <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80">85</h2>
+                                    <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
+                                    <img src="img-fotball/LOGO-CLUP-DIMARIA-removebg-preview.png" alt="" class="w-[0.7rem]  opacity-60 ml-[2px]">
+                                </div>
+                                <img src="img-fotball/imgNicolás-Otamendi-removebg-preview.png" alt="" class="w-[2.1rem]  absolute bottom-[2.8rem] left-[1.5rem]">
+                                <h2 class="text-[#fff] text-[7px] font-bold absolute left-[1.6rem] top-[0.6rem] opacity-80">Otamendi</h2>
+                                <p>CB</p>
+                                <div class="flex text-[#fff] text-[5px] absolute bottom-5 right-4 gap-[0.5rem] opacity-80">
+                                    <div>
+                                        <h3>Pac :<span>85</span></h3>
+                                        <h3>Sho : <span>80</span></h3>
+                                        <h3>Pas : <span>90</span></h3>
+                                    </div>
+                                    <div>
+                                        <h3>Dri : <span>86</span></h3>
+                                        <h3>Def : <span>33</span></h3>
+                                        <h3>Phy : <span>65</span></h3>
+                                    </div>
+                                </div>
+                            </div>
+                             <!-- cb -->
+                             <div class="item  relative">
+                                <div class="absolute left-[0.7rem] top-[1.3rem]">
+                                    <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80">85</h2>
+                                    <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
+                                    <img src="img-fotball/logo-ichpilia-removebg-preview.png" alt="" class="w-[0.7rem]  opacity-60 ml-[2px]">
+                                </div>
+                                <img src="img-fotball/IMG-MARCOS-removebg-preview.png" alt="" class="w-[4rem]  absolute bottom-[2.8rem] left-[0.4rem]">
+                                <h2 class="text-[#fff] text-[7px] font-bold absolute left-[1.6rem] top-[0.6rem] opacity-80">MARCOS</h2>
+                                <p>CB</p>
+                                <div class="flex text-[#fff] text-[5px] absolute bottom-5 right-4 gap-[0.5rem] opacity-80">
+                                    <div>
+                                        <h3>Pac :<span>85</span></h3>
+                                        <h3>Sho : <span>80</span></h3>
+                                        <h3>Pas : <span>90</span></h3>
+                                    </div>
+                                    <div>
+                                        <h3>Dri : <span>86</span></h3>
+                                        <h3>Def : <span>33</span></h3>
+                                        <h3>Phy : <span>65</span></h3>
+                                    </div>
+                                </div>
+                            </div>
+                             <!-- LB -->
+                             <div class="item  relative">
                                 <div class="absolute left-[0.7rem] top-[1.3rem]">
                                     <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80">81</h2>
                                     <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
@@ -498,7 +481,7 @@
                                 </div>
                             </div>
                              <!-- RB -->
-                             <div class="item w-[5rem] relative">
+                             <div class="item  relative">
                                 <div class="absolute left-[0.7rem] top-[1.3rem]">
                                     <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80">81</h2>
                                     <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
@@ -520,37 +503,62 @@
                                     </div>
                                 </div>
                             </div>
-                             <!-- RB -->
+                        </div>
+                        <div class="flex garde">
+                              
+                                <!-- GK -->
+                            <div class="item w-[5rem] relative">
+                                                            <div class="absolute left-[0.7rem] top-[1.3rem]">
+                                                                <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80">87</h2>
+                                                                <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
+                                                                <img src="img-fotball/Aston-Villa-Logo-1990-removebg-preview.png" alt="" class="w-[0.8rem]  opacity-60 ml-[2px]">
+                                                            </div>
+                                                            <img src="img-fotball/img-martinez-emiliano-removebg-preview.png" alt="" class="w-[5rem]  absolute bottom-[2.8rem] left-[0.6rem]">
+                                                            <h2 class="text-[#fff] text-[7px] font-bold absolute left-[1.6rem] top-[0.6rem] opacity-80">Martine</h2>
+                                                            <p>GK</p>
+                                                            <div class="flex text-[#fff] text-[5px] absolute bottom-5 right-4 gap-[0.5rem] opacity-80">
+                                                                <div>
+                                                                    <h3>Div :<span>84</span></h3>
+                                                                    <h3>Han : <span>82</span></h3>
+                                                                    <h3>Kic : <span>86</span></h3>
+                                                                </div>
+                                                                <div>
+                                                                    <h3>Ref : <span>86</span></h3>
+                                                                    <h3>Spo : <span>56</span></h3>
+                                                                    <h3>Pos : <span>57</span></h3>
+                                                                </div>
+                                                            </div>
+                                </div>
+                                 <!-- GK -->
                              <div class="item w-[5rem] relative">
                                 <div class="absolute left-[0.7rem] top-[1.3rem]">
                                     <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80">79</h2>
                                     <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
-                                    <img src="img-fotball/logo-reft-playe-removebg-preview.png" alt="" class="w-[0.7rem]  opacity-60 ml-[2px]">
+                                    <img src="img-fotball/logo-AS-Roma-removebg-preview.png" alt="" class="w-[0.7rem]  opacity-60 ml-[2px]">
                                 </div>
-                                <img src="img-fotball/img-Nicolás-Arángelo-removebg-preview.png" alt="" class="w-[2.7rem]  absolute bottom-[3rem] right-[1rem]">
-                                <h2 class="text-[#fff] text-[7px] font-bold absolute left-[1.6rem] top-[0.6rem] opacity-80">Arángelo</h2>
-                                <p>RB</p>
+                                <img src="img-fotball/img-Juan-Musso-removebg-preview.png" alt="" class="w-[5rem]  absolute bottom-[2.8rem]">
+                                <h2 class="text-[#fff] text-[7px] font-bold absolute left-[1.6rem] top-[0.6rem] opacity-80">Musso</h2>
+                                <p>GK</p>
                                 <div class="flex text-[#fff] text-[5px] absolute bottom-5 right-4 gap-[0.5rem] opacity-80">
                                     <div>
-                                        <h3>Pac :<span>70</span></h3>
-                                        <h3>Sho : <span>80</span></h3>
-                                        <h3>Pas : <span>90</span></h3>
+                                        <h3>Div :<span>79</span></h3>
+                                        <h3>Han : <span>70</span></h3>
+                                        <h3>Kic : <span>86</span></h3>
                                     </div>
                                     <div>
-                                        <h3>Dri : <span>86</span></h3>
-                                        <h3>Def : <span>33</span></h3>
-                                        <h3>Phy : <span>65</span></h3>
+                                        <h3>Ref : <span>80</span></h3>
+                                        <h3>Spo : <span>56</span></h3>
+                                        <h3>Pos : <span>57</span></h3>
                                     </div>
                                 </div>
                             </div>
-
-                            
-                        
+                             
                         </div>
+                        
+                    </div>
         </div>
     </section>
 
     <script src="apk.js"></script>
 </body>
-
 </html>
