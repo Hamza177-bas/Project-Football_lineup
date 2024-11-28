@@ -54,18 +54,27 @@ function chek(){
 function chek1(){
     c=1;
 }
+
 function buttongk(){
     if(c===2){
-        car.innerHTML=a[0].innerHTML
+        car.innerHTML=a[0].innerHTML;
+        a[0].style.display="none"
+        a[1].style.display="block"
     }else if(c===1){
-        car1.innerHTML=a[0].innerHTML
+        car1.innerHTML=a[0].innerHTML;
+        a[0].style.display="none"
+        a[1].style.display="block"
     }
 }
 function buttongk1(){
     if(c===2){
         car.innerHTML=a[1].innerHTML
+        a[1].style.display="none"
+        a[0].style.display="block"
     }else if(c===1){
         car1.innerHTML=a[1].innerHTML
+        a[1].style.display="none"
+        a[0].style.display="block"
     }
 }
 
