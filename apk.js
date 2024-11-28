@@ -46,12 +46,29 @@ function sowgarde(){
 }
 let a=document.querySelectorAll(".gk");
 let car=document.querySelector('.car');
+let car1=document.querySelector('.car1');
+let c=0;
+function chek(){
+    c=2;
+}
+function chek1(){
+    c=1;
+}
 function buttongk(){
-
-    car.innerHTML=a[0].innerHTML
+    if(c===2){
+        car.innerHTML=a[0].innerHTML
+    }else if(c===1){
+        car1.innerHTML=a[0].innerHTML
+    }
 }
 function buttongk1(){
-    car.innerHTML=a[1].innerHTML
+    if(c===2){
+        car.innerHTML=a[1].innerHTML
+    }else if(c===1){
+        car1.innerHTML=a[1].innerHTML
+    }
 }
+
+
 
 
