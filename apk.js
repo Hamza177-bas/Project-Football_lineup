@@ -46,7 +46,12 @@ function sowgarde(){
 }
 let a=document.querySelectorAll(".gk");
 let car=document.querySelector('.car');
-// car.innerHTML=a[1].innerHTML
+function buttongk(){
 
+    car.innerHTML=a[0].innerHTML
+}
+function buttongk1(){
+    car.innerHTML=a[1].innerHTML
+}
 
 
