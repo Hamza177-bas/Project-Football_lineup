@@ -31,9 +31,7 @@ let milieu=document.querySelector(".milieu")
 let defense=document.querySelector(".défense")
 let garde=document.querySelector(".garde")
 let defense1=document.querySelector(".défense1")
-
 function showatac(){
-    
     cardts.innerHTML=hojom.innerHTML;
 }
 function sowmilieu(){
@@ -42,8 +40,13 @@ function sowmilieu(){
 function sowdéfense(){
     cardts.innerHTML=defense.innerHTML;
     cardts.innerHTML+=defense1.innerHTML;
-    
 }
 function sowgarde(){
     cardts.innerHTML=garde.innerHTML;
 }
+let a=document.querySelectorAll(".gk");
+let car=document.querySelector('.car');
+// car.innerHTML=a[1].innerHTML
+
+
+

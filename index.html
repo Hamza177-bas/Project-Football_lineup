@@ -49,7 +49,7 @@
         <div class="w-[100%] h-auto bg-[#0c0707] pl-[2rem] items-center relative">
             <div class="flex justify-between">
                 <img src="img-fotball/drabo.png" alt="" class="w-[18rem] h-[8rem] mt-[1.5rem] ml-[2rem] opacity-40 max-md:w-[8rem]" />
-                <h2 class="text-[#fff] text-[2rem] flex items-center pl-[5rem] opacity-70 max-md:text-[0.5rem]">
+                <h2 class="text-[#fff] text-[2rem] flex items-center pl-[5rem] opacity-70 max-md:text-[1rem]">
                     Welcome To The Argentina National
                 </h2>
                 <img src="img-fotball/gif2.gif" alt="" class="w-[18rem] h-[10rem] mt-[0.5rem] opacity-40 max-md:hidden"/>
@@ -110,7 +110,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="absolute w-[20rem]  right-3 top-[4rem]">
+                    <div class="absolute w-[20rem]  right-3 top-[4rem] max-md:hidden max-lg:hidden">
                         <img src="img-fotball/Lionel-Scaloni-entraîneur-removebg-preview (1).png" alt="" class="opacity-60">
                         <h2 class="text-[#fff] flex justify-end mr-[3rem] mt-[0.6rem] opacity-60 cotch">Scaloni entraîneur</h2>
                     </div>
@@ -118,7 +118,7 @@
                 <h2 class="text-[#fff] text-center my-[1rem] opacity-80 Reserve">Players Reserve Bank</h2>
                     <div class="carosail m-auto flex">
 
-                        <div class="w-[5rem] item">
+                        <div class="w-[5rem] item car">
                             <p>GK</p>
                                 <button class="btn" onclick="sowgarde()">+</button>
                         </div>
@@ -150,13 +150,13 @@
                         </div>
                         
                         </div>
-                        <div class="text-[#fff] absolute top-[12rem] left-[2rem] cardts "></div>
+                        <div class="text-[#fff] absolute top-[12rem] left-[2rem] cardts"></div>
                     <div class="">
                         <div class="atac">
                             <div class="flex">
 
                                 <!-- LW -->
-                                <div class="item w-[5rem] relative">
+                                <div class="item w-[5rem] relative " id="lw1">
                                   <div class="absolute left-[0.7rem] top-[1.3rem]">
                                       <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80">90</h2>
                                       <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
@@ -179,7 +179,7 @@
                                   </div>
                               </div>
                               <!-- RW -->
-                              <div class="item w-[5rem] relative">
+                              <div class="item w-[5rem] relative " id="rw1">
                                   <div class="absolute left-[0.7rem] top-[1.3rem]">
                                       <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80">86</h2>
                                       <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
@@ -202,7 +202,7 @@
                                   </div>
                               </div>
                               <!-- ST -->
-                              <div class="item w-[5rem] relative">
+                              <div class="item w-[5rem] relative" id="st1">
                                   <div class="absolute left-[0.7rem] top-[1.3rem]">
                                       <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80">89</h2>
                                       <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
@@ -225,7 +225,7 @@
                                   </div>
                               </div>
                               <!-- ST -->
-                              <div class="item w-[5rem] relative">
+                              <div class="item w-[5rem] relative" id="st2">
                                   <div class="absolute left-[0.7rem] top-[1.3rem]">
                                       <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80">85</h2>
                                       <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
@@ -253,7 +253,7 @@
                             <div class="flex">
 
                                 <!-- CM -->
-                                <div class="item  relative">
+                                <div class="item  relative" id="cm1">
                                   <div class="absolute left-[0.7rem] top-[1.3rem]">
                                       <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80">80</h2>
                                       <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
@@ -276,7 +276,7 @@
                                   </div>
                               </div>
                               <!-- CM -->
-                              <div class="item relative">
+                              <div class="item relative" id="cm1">
                                   <div class="absolute left-[0.7rem] top-[1.3rem]">
                                       <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80">81</h2>
                                       <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
@@ -299,7 +299,7 @@
                                   </div>
                               </div>
                               <!-- CM -->
-                              <div class="item  relative">
+                              <div class="item  relative" id="cm2">
                                   <div class="absolute left-[0.7rem] top-[1.3rem]">
                                       <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80">83</h2>
                                       <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
@@ -322,7 +322,7 @@
                                   </div>
                               </div>
                                 <!-- CM -->
-                                <div class="item  relative">
+                                <div class="item  relative" id="cm3">
                                   <div class="absolute left-[0.7rem] top-[1.3rem]">
                                       <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80">86</h2>
                                       <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
@@ -344,8 +344,8 @@
                                       </div>
                                   </div>
                               </div>
-                              <!-- CM -->
-                              <div class="item relative">
+                                <!-- CM -->
+                            <div class="item relative" id="cm4">
                                   <div class="absolute left-[0.7rem] top-[1.3rem]">
                                       <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80">79</h2>
                                       <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
@@ -366,15 +366,14 @@
                                           <h3>Phy : <span>65</span></h3>
                                       </div>
                                   </div>
-                              </div>
+                                </div>
                             </div>
-
                         </div>
                         <div class=" défense">
                             <div class="flex">
 
                                 <!-- RB -->
-                                <div class="item  relative">
+                                <div class="item  relative" id="rb">
                                     <div class="absolute left-[0.7rem] top-[1.3rem]">
                                         <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80">79</h2>
                                         <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
@@ -396,8 +395,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                 <!-- cb -->
-                                <div class="item  relative">
+                                <!-- cb -->
+                                <div class="item  relative" id="cb">
                                     <div class="absolute left-[0.7rem] top-[1.3rem]">
                                         <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80">80</h2>
                                         <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
@@ -420,7 +419,7 @@
                                     </div>
                                 </div>
                                 <!-- cb -->
-                                <div class="item  relative">
+                                <div class="item  relative" id="cb1">
                                     <div class="absolute left-[0.7rem] top-[1.3rem]">
                                         <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80">85</h2>
                                         <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
@@ -442,15 +441,12 @@
                                         </div>
                                     </div>
                                 </div>
-                                
                             </div>
-                        
-                            
                         </div>
                         <div class="défense1">
                             <div class="flex">
                                 <!-- LB -->
-                                <div class="item  relative">
+                                <div class="item  relative" id="lb">
                                  <div class="absolute left-[0.7rem] top-[1.3rem]">
                                      <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80">81</h2>
                                      <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
@@ -473,7 +469,7 @@
                                  </div>
                           </div>
                               <!-- RB -->
-                          <div class="item  relative">
+                          <div class="item  relative" id="rb1">
                                  <div class="absolute left-[0.7rem] top-[1.3rem]">
                                      <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80">81</h2>
                                      <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
@@ -496,7 +492,7 @@
                                  </div>
                           </div>
                            <!-- cb -->
-                           <div class="item  relative">
+                           <div class="item  relative" id="cb2">
                             <div class="absolute left-[0.7rem] top-[1.3rem]">
                                 <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80">85</h2>
                                 <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
@@ -521,9 +517,9 @@
                             </div>
                         </div>
                         <div class="flex garde">
-                              <div class="flex">
-                                  <!-- GK -->
-                              <div class="item w-[5rem] relative">
+                                <div class="flex">
+                                    <!-- GK -->
+                                <div class="item w-[5rem] relative gk">
                                                               <div class="absolute left-[0.7rem] top-[1.3rem]">
                                                                   <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80">87</h2>
                                                                   <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
@@ -544,9 +540,9 @@
                                                                       <h3>Pos : <span>57</span></h3>
                                                                   </div>
                                                               </div>
-                                  </div>
-                                   <!-- GK -->
-                               <div class="item w-[5rem] relative">
+                                    </div>
+                                    <!-- GK -->
+                                <div class="item w-[5rem] relative gk">
                                   <div class="absolute left-[0.7rem] top-[1.3rem]">
                                       <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80">79</h2>
                                       <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
@@ -567,12 +563,9 @@
                                           <h3>Pos : <span>57</span></h3>
                                       </div>
                                   </div>
-                              </div>
-                              </div>
-                             
+                                </div>
+                                </div>
                         </div>
-
- 
         </div>
     </section>
     <script src="apk.js"></script>
