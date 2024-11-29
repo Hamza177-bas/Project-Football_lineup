@@ -76,9 +76,44 @@ function buttongk1(){
         a[0].style.display="block"
     }
 }
-let milie=document.querySelectorAll(".cm");
-let mil=document.querySelector(".mil");
-function milieu1(){
-    milie[0].innerHTML=mil.innerHTML;
-    
+let ml=0;
+function cheksowmil1(){
+    ml=1;
 }
+function cheksowmil2(){
+    ml=2;
+}
+function cheksowmil3(){
+    ml=3;
+}
+function cheksowmil4(){
+    ml=4;
+}
+function cheksowmil5(){
+    ml=5;
+}
+let milie=document.querySelectorAll(".micm");
+let mil=document.querySelectorAll(".mil");
+function milieu1(){
+    console.log("clicked");
+    
+    if(ml==1){
+        milie[0].innerHTML=mil[0].innerHTML;
+    }else if(ml==2){
+        milie[0].innerHTML=mil[1].innerHTML
+    }
+}
+// function milieu2(){
+//     milie[1].innerHTML=mil[1].innerHTML;
+// }
+// function milieu3(){
+//     milie[2].innerHTML=mil[2].innerHTML;
+    
+// }
+// function milieu4(){
+//     milie[3].innerHTML=mil[3].innerHTML;
+    
+// }
+// function milieu5(){
+//     milie[4].innerHTML=mil[4].innerHTML;
+// }
