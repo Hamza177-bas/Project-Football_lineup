@@ -54,7 +54,6 @@ function chek(){
 function chek1(){
     c=1;
 }
-
 function buttongk(){
     if(c===2){
         car.innerHTML=a[0].innerHTML;
@@ -77,7 +76,9 @@ function buttongk1(){
         a[0].style.display="block"
     }
 }
-
-
-
-
+let milie=document.querySelectorAll(".cm");
+let mil=document.querySelector(".mil");
+function milieu1(){
+    milie[0].innerHTML=mil.innerHTML;
+    
+}
