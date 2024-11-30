@@ -4,9 +4,7 @@ body {
 .titl{
     text-shadow: 4px 2px 5px hsl(216, 84%, 54%);
 }
-/* .cotch{
-  text-shadow: 4px 2px 5px hsl(215, 25%, 91%);
-} */
+
 .carosail{
   max-width: 30rem;
   overflow-x: auto;
@@ -46,4 +44,18 @@ P{
 .btn:hover{
   color: rgba(211, 239, 53, 0.769);
   bottom: 0.2rem;
+}
+.backg-ajout{
+  width: 500px;
+  height: 360px;
+  background: cover;
+  background: no-repeat;
+  background-size: contain;
+  border-radius: 20px;
+  border:solid 2px #fff;
+  background-image: url("img-fotball/background-arg.jpg");
+  
+}
+input ,.send{
+  border-radius: 8px;
 }
