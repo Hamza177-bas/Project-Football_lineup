@@ -76,6 +76,13 @@ function buttongk1(){
         a[0].style.display="block"
     }
 }
+let milie=document.querySelectorAll(".micm");
+let mil1=document.querySelector(".mil1");
+let mil2=document.querySelector(".mil2");
+let mil3=document.querySelector(".mil3");
+let mil4=document.querySelector(".mil4");
+let mil5=document.querySelector(".mil5");
+let arrymil=[mil1,mil2,mil3,mil4,mil5];
 let ml=0;
 function cheksowmil1(){
     ml=1;
@@ -92,28 +99,105 @@ function cheksowmil4(){
 function cheksowmil5(){
     ml=5;
 }
-let milie=document.querySelectorAll(".micm");
-let mil=document.querySelectorAll(".mil");
 function milieu1(){
-    console.log("clicked");
     
-    if(ml==1){
-        milie[0].innerHTML=mil[0].innerHTML;
-    }else if(ml==2){
-        milie[0].innerHTML=mil[1].innerHTML
+    for(let i=0;i<5;i++){
+        if(ml==i+1){
+            milie[i].innerHTML=arrymil[0].innerHTML;
+        }
+
     }
 }
-// function milieu2(){
-//     milie[1].innerHTML=mil[1].innerHTML;
-// }
-// function milieu3(){
-//     milie[2].innerHTML=mil[2].innerHTML;
+function milieu2(){
+    for(let i=0;i<5;i++){
+        if(ml==i+1){
+            milie[i].innerHTML=arrymil[1].innerHTML;
+        }
+    }
+}
+function milieu3(){
+    for(let i=0;i<5;i++){
+        if(ml==i+1){
+            milie[i].innerHTML=arrymil[2].innerHTML;
+        }
+    }
     
-// }
-// function milieu4(){
-//     milie[3].innerHTML=mil[3].innerHTML;
+}
+function milieu4(){
+    for(let i=0;i<5;i++){
+        if(ml==i+1){
+            milie[i].innerHTML=arrymil[3].innerHTML;
+        }
+    }
     
-// }
-// function milieu5(){
-//     milie[4].innerHTML=mil[4].innerHTML;
-// }
+}
+function milieu5(){
+    for(let i=0;i<5;i++){
+        if(ml==i+1){
+            milie[i].innerHTML=arrymil[4].innerHTML;
+        }
+    }
+}
+let def=0;
+function cheksowdefen1(){
+    def=1;
+}
+function cheksowdefen2(){
+    def=2;
+}
+function cheksowdefen3(){
+    def=3;
+}
+function cheksowdefen4(){
+    def=4;
+}
+function cheksowdefen5(){
+    def=5;
+}
+function cheksowdefen6(){
+    def=6;
+}
+let vardef1=document.querySelectorAll(".def")
+let vardefen=document.querySelectorAll(".defen");
+function defen1(){
+    for(let i=0;i<5;i++){
+        if(def==i+1){
+            vardefen[i].innerHTML=vardef1[0].innerHTML;
+        }
+    }
+}
+function defen2(){
+    for(let i=0;i<5;i++){
+        if(def==i+1){
+            vardefen[i].innerHTML=vardef1[1].innerHTML;
+        }
+    }
+}
+function defen3(){
+    for(let i=0;i<5;i++){
+        if(def==i+1){
+            vardefen[i].innerHTML=vardef1[2].innerHTML;
+        }
+    }
+}
+function defen4(){
+    for(let i=0;i<5;i++){
+        if(def==i+1){
+            vardefen[i].innerHTML=vardef1[3].innerHTML;
+        }
+    }
+}
+function defen5(){
+    for(let i=0;i<5;i++){
+        if(def==i+1){
+            vardefen[i].innerHTML=vardef1[4].innerHTML;
+        }
+    }
+}
+function defen6(){
+    for(let i=0;i<5;i++){
+        if(def==i+1){
+            vardefen[i].innerHTML=vardef1[5].innerHTML;
+        }
+    }
+}
