@@ -160,44 +160,91 @@ function cheksowdefen6(){
 let vardef1=document.querySelectorAll(".def")
 let vardefen=document.querySelectorAll(".defen");
 function defen1(){
-    for(let i=0;i<5;i++){
+    for(let i=0;i<6;i++){
         if(def==i+1){
             vardefen[i].innerHTML=vardef1[0].innerHTML;
         }
     }
 }
 function defen2(){
-    for(let i=0;i<5;i++){
+    for(let i=0;i<6;i++){
         if(def==i+1){
             vardefen[i].innerHTML=vardef1[1].innerHTML;
         }
     }
 }
 function defen3(){
-    for(let i=0;i<5;i++){
+    for(let i=0;i<6;i++){
         if(def==i+1){
             vardefen[i].innerHTML=vardef1[2].innerHTML;
         }
     }
 }
 function defen4(){
-    for(let i=0;i<5;i++){
+    for(let i=0;i<6;i++){
         if(def==i+1){
             vardefen[i].innerHTML=vardef1[3].innerHTML;
         }
     }
 }
 function defen5(){
-    for(let i=0;i<5;i++){
+    for(let i=0;i<6;i++){
         if(def==i+1){
             vardefen[i].innerHTML=vardef1[4].innerHTML;
         }
     }
 }
 function defen6(){
-    for(let i=0;i<5;i++){
+    for(let i=0;i<6;i++){
         if(def==i+1){
             vardefen[i].innerHTML=vardef1[5].innerHTML;
+        }
+    }
+}
+
+let atc=0;
+
+function chekonclickatac1(){
+        atc=1;
+}
+function chekonclickatac2(){
+    atc=2;
+}
+function chekonclickatac3(){
+    atc=3;
+}
+function chekonclickatac4(){
+    atc=4;
+}
+
+let atco=document.querySelectorAll(".atc")
+let atccart=document.querySelectorAll(".atccart");
+
+function atac1(){
+    for(let i=0;i<4;i++){
+        if(atc==i+1){
+            atccart[i].innerHTML=atco[0].innerHTML;
+        }
+    }
+}
+function atac2(){
+    for(let i=0;i<4;i++){
+        if(atc==i+1){
+            atccart[i].innerHTML=atco[1].innerHTML;
+        }
+    }
+}
+function atac3(){
+    for(let i=0;i<4;i++){
+        if(atc==i+1){
+            atccart[i].innerHTML=atco[2].innerHTML;
+        }
+    }
+}
+function atac4(){
+    for(let i=0;i<4;i++){
+        if(atc==i+1){
+            atccart[i].innerHTML=atco[3].innerHTML;
         }
     }
 }

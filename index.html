@@ -61,13 +61,13 @@
                     <img src="img-fotball/mal3ab.png "alt="" class="opacity-40"/>
                     <div class="flex justify-around absolute flex-col gap-[0.5rem]">
                         <div class="flex gap-[1rem] justify-center">
-                            <div class="w-[5rem] item">
+                            <div class="w-[5rem] item atccart">
                                 <p>RW</p>
-                                <button class="btn" onclick="showatac()">+</button>
+                                <button class="btn" onclick="showatac(),chekonclickatac1()">+</button>
                             </div>
-                            <div class="w-[5rem] item">
+                            <div class="w-[5rem] item atccart">
                                 <p>ST</p>
-                                <button class="btn" onclick="showatac()">+</button>
+                                <button class="btn" onclick="showatac(),chekonclickatac2()">+</button>
                             </div>
                         </div>
                         <div class="flex gap-[2rem]">
@@ -83,9 +83,9 @@
                                 <p>CM</p>
                                 <button class="btn" onclick="sowmilieu(),cheksowmil3()">+</button>
                             </div>
-                            <div class="w-[5rem] item">
+                            <div class="w-[5rem] item atccart">
                                 <p>LW</p>
-                                <button class="btn" onclick="showatac()">+</button>
+                                <button class="btn" onclick="showatac(),chekonclickatac3()">+</button>
                             </div>
                         </div>
                         <div class="flex gap-[2rem]">
@@ -131,9 +131,9 @@
                                 <button class="btn "onclick="sowdéfense(),cheksowdefen5()">+</button>
                                 
                             </div>
-                        <div class="w-[5rem] item">
+                        <div class="w-[5rem] item atccart">
                             <p>ST</p>
-                                <button class="btn"onclick="showatac()">+</button>
+                                <button class="btn"onclick="showatac(),chekonclickatac4()">+</button>
                             </div>
                             
                         <div class="w-[5rem] item micm">
@@ -159,7 +159,7 @@
                             <div class="flex">
 
                                 <!-- LW -->
-                                <div class="item w-[5rem] relative " id="lw1">
+                                <div class="item w-[5rem] relative atc" onclick="atac1()">
                                   <div class="absolute left-[0.7rem] top-[1.3rem]">
                                       <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80">90</h2>
                                       <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
@@ -182,7 +182,7 @@
                                   </div>
                               </div>
                               <!-- RW -->
-                              <div class="item w-[5rem] relative " id="rw1">
+                              <div class="item w-[5rem] relative atc" onclick="atac2()">
                                   <div class="absolute left-[0.7rem] top-[1.3rem]">
                                       <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80">86</h2>
                                       <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
@@ -205,7 +205,7 @@
                                   </div>
                               </div>
                               <!-- ST -->
-                              <div class="item w-[5rem] relative" id="st1">
+                              <div class="item w-[5rem] relative atc" onclick="atac3()">
                                   <div class="absolute left-[0.7rem] top-[1.3rem]">
                                       <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80">89</h2>
                                       <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
@@ -228,7 +228,7 @@
                                   </div>
                               </div>
                               <!-- ST -->
-                              <div class="item w-[5rem] relative" id="st2">
+                              <div class="item w-[5rem] relative atc" onclick="atac4()">
                                   <div class="absolute left-[0.7rem] top-[1.3rem]">
                                       <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80">85</h2>
                                       <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
