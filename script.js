@@ -249,10 +249,14 @@ let atccart=document.querySelectorAll(".atccart");
         }
     }
 
-let backgajout=document.querySelector(".backg-ajout");
+let backgajout=document.querySelector(".ajout");
 let dabab=document.querySelector(".dabab");
 function btnajout(){
     backgajout.classList.remove('hidden')
     dabab.classList.add('blur-sm')
 
+}
+function btnhidden(){
+    backgajout.classList.add('hidden')
+    dabab.classList.remove('blur-sm')
 }

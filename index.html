@@ -592,78 +592,82 @@
                                     <button class="btn ">+</button>
                                 </div>
                                     </div>
-    
+                                    
+                                </div>
                             </div>
-            </div>
+                            
+                        </div>
+                        <!-- page ajout -->
+                        <div class="absolute bottom-[-35rem] right-[20rem] ajout hidden">
+                            <button class="text-[#fff] absolute right-0 bottom-[22rem] hover:text-[#ff0000] text-[1.5rem]" onclick="btnhidden()">X</button>
+             <div class="backg-ajout  ">
+                 <form class="backg-ajout flex flex-col gap-[rem] ">
+                     <br>
+                     <div class="flex gap-[15.5rem] text-[#fff] font-bold">
+                         <label for="nam" class="ml-[5px]">Name</label>
+                         <label for="pos" class="ml-[5rem]">Position</label>
+                     </div>
+                     <div class="flex gap-[1rem]">
+                         <input type="text" id="nam" class="bg-[#e1dada] w-[70%] ml-[5px]">
+                         <select name="" id="pos" class="bg-[#e1dada] w-[50%] mr-[5px]">
+                             <option value="ST">ST</option>
+                             <option value="RW">RW</option>
+                             <option value="LW">LW</option>
+                             <option value="CM">CM</option>
+                             <option value="LB">LB</option>
+                             <option value="RB">RB</option>
+                             <option value="CB">CB</option>
+                             <option value="GK">GK</option>
+                         </select>
+                     </div>
+                     <br>
+                     <div class="flex gap-[11rem]  text-[#fff] font-bold ml-[5px]">
+                         <label for="clu" class="ml-[5px]">Club</label>
+                         <label for="ime" class="ml-[6.5rem]">image(URL)</label>
+                     </div>
+                     <div class="flex gap-[1rem]  ">
+                         <select name="" id="clu" class="bg-[#e1dada] w-[50%] ml-[5px]">
+                             <option value="Roma">Roma</option>
+                             <option value="Miami">Inter Miami</option>
+                             <option value="Westham">Westham</option>
+                             <option value="Banfika">Banfika</option>
+                             <option value="Viarial">Viarial</option>
+                             <option value="Atlitico">Atlitico Madrid</option>
+                             <option value="Sevilla">Sevilla</option>
+                             <option value="Totanham">Totanham</option>
+                             <option value="milan">Inter milan</option>
+                            </select>
+                         <input type="text" id="ime" class="bg-[#e1dada] w-[50%] mr-[5px]">
+     
+                     </div>
+                     <br>
+                     <div class="flex gap-[5rem] ml-[0.4rem] text-[#fff] font-bold ">
+                         <label for="pas" class="ml-[5px]">Pas </label>
+                         <label for="dri" class="ml-[2rem]">Dri</label>
+                         <label for="def" class="ml-[2.2rem]">Def</label>
+                     </div>
+                     <div class="flex gap-[1rem] ">
+                         <input type="number" id="pas" class="bg-[#e1dada] w-[20%] ml-[5px]">
+                         <input type="number" id="dri" class="bg-[#e1dada] w-[20%] ">
+                         <input type="number" id="def" class="bg-[#e1dada] w-[20%] ">
+                     </div>
+                     <br>
+                     <div class="flex gap-[5rem] ml-[0.4rem] text-[#fff] font-bold">
+                         <label for="phy" class="ml-[5px]">Phy</label>
+                         <label for="pac" class="ml-[2rem]">Pac</label>
+                         <label for="sho" class="ml-[1.9rem]">Sho</label>
+                     </div>
+                     <div class="flex gap-[1rem]">
+                         <input type="number" id="phy" class="bg-[#e1dada] w-[20%] ml-[5px]">
+                         <input type="number" id="pac" class="bg-[#e1dada] w-[20%] ">
+                         <input type="number" id="sho"  class="bg-[#e1dada] w-[20%] ">
+                     </div>
+                     <br>
+                     <button class="text-[#0c0707] ml-[5px] bg-[#fff]  w-[40%] send">Send</button>
+                 </form>
+             </div>
 
-        </div>
-        <!-- page ajout -->
-        <div class="backg-ajout absolute bottom-[-35rem] right-[20rem] hidden">
-            <form class="backg-ajout flex flex-col gap-[rem] ">
-                <br>
-                <div class="flex gap-[15.5rem] text-[#fff] font-bold">
-                    <label for="nam" class="ml-[5px]">Name</label>
-                    <label for="pos" class="ml-[5rem]">Position</label>
-                </div>
-                <div class="flex gap-[1rem]">
-                    <input type="text" id="nam" class="bg-[#e1dada] w-[70%] ml-[5px]">
-                    <select name="" id="pos" class="bg-[#e1dada] w-[50%] mr-[5px]">
-                        <option value="ST">ST</option>
-                        <option value="RW">RW</option>
-                        <option value="LW">LW</option>
-                        <option value="CM">CM</option>
-                        <option value="LB">LB</option>
-                        <option value="RB">RB</option>
-                        <option value="CB">CB</option>
-                        <option value="GK">GK</option>
-                    </select>
-                </div>
-                <br>
-                <div class="flex gap-[11rem]  text-[#fff] font-bold ml-[5px]">
-                    <label for="clu" class="ml-[5px]">Club</label>
-                    <label for="ime" class="ml-[6.5rem]">image(URL)</label>
-                </div>
-                <div class="flex gap-[1rem]  ">
-                    <select name="" id="clu" class="bg-[#e1dada] w-[50%] ml-[5px]">
-                        <option value="Roma">Roma</option>
-                        <option value="Miami">Inter Miami</option>
-                        <option value="Westham">Westham</option>
-                        <option value="Banfika">Banfika</option>
-                        <option value="Viarial">Viarial</option>
-                        <option value="Atlitico">Atlitico Madrid</option>
-                        <option value="Sevilla">Sevilla</option>
-                        <option value="Totanham">Totanham</option>
-                        <option value="milan">Inter milan</option>
-                    </select>
-                    <input type="text" id="ime" class="bg-[#e1dada] w-[50%] mr-[5px]">
-
-                </div>
-                <br>
-                <div class="flex gap-[5rem] ml-[0.4rem] text-[#fff] font-bold ">
-                    <label for="pas" class="ml-[5px]">Pas </label>
-                    <label for="dri" class="ml-[2rem]">Dri</label>
-                    <label for="def" class="ml-[2.2rem]">Def</label>
-                </div>
-                <div class="flex gap-[1rem] ">
-                    <input type="number" id="pas" class="bg-[#e1dada] w-[20%] ml-[5px]">
-                    <input type="number" id="dri" class="bg-[#e1dada] w-[20%] ">
-                    <input type="number" id="def" class="bg-[#e1dada] w-[20%] ">
-                </div>
-                <br>
-                <div class="flex gap-[5rem] ml-[0.4rem] text-[#fff] font-bold">
-                    <label for="phy" class="ml-[5px]">Phy</label>
-                    <label for="pac" class="ml-[2rem]">Pac</label>
-                    <label for="sho" class="ml-[1.9rem]">Sho</label>
-                </div>
-                <div class="flex gap-[1rem]">
-                    <input type="number" id="phy" class="bg-[#e1dada] w-[20%] ml-[5px]">
-                    <input type="number" id="pac" class="bg-[#e1dada] w-[20%] ">
-                    <input type="number" id="sho"  class="bg-[#e1dada] w-[20%] ">
-                </div>
-                <br>
-                <button class="text-[#0c0707] ml-[5px] bg-[#fff]  w-[40%] send">Send</button>
-            </form>
-        </div>
+         </div>
         HDHDHJSDJKSDJKSDKJ
     </section>
     <script src="script.js"></script>
