@@ -6,17 +6,20 @@ body {
 }
 
 .carosail{
-  max-width: 30rem;
-  overflow-x: auto;
-  border-top: solid 2px white;
+  max-width: auto;
+  margin-top: 10px;
 }
 
 .Reserve{
   text-shadow: 4px 2px 5px hsl(215, 15%, 71%);
+  justify-content: center;
 }
 .carosail::-webkit-scrollbar{
   display: none;
 }
+
+  /* border-bottom: solid 2px white; */
+
 
 .item{
   min-width: 5rem;
@@ -46,16 +49,16 @@ P{
   bottom: 0.2rem;
 }
 .backg-ajout{
-  width: 500px;
+  width: 630px;
   height: 360px;
   background: cover;
   background: no-repeat;
   background-size: contain;
   border-radius: 20px;
-  border:solid 2px #fff;
+  border:solid 1px #fff;
   background-image: url("img-fotball/background-arg.jpg");
   
 }
-input ,.send{
+input ,.send ,select{
   border-radius: 8px;
 }
