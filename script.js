@@ -89,20 +89,29 @@ function buttongk2(){
         a[0].style.display="block"
     }else if(c===1){
         car1.innerHTML=a[2].innerHTML
-        a[2].style.display="none"
+        a[2][0].style.display="none"
         a[1].style.display="block"
         a[0].style.display="block"
     }
 }
+// function buttongk3(){
+//     if(c===2){
+//         car.innerHTML=a[1].innerHTML
+//         a[1].style.display="none"
+//         a[0].style.display="block"
+//     }else if(c===1){
+//         car1.innerHTML=a[1].innerHTML
+//         a[1].style.display="none"
+//         a[0].style.display="block"
+//     }
+// }
 let milie=document.querySelectorAll(".micm");
 let mil1=document.querySelector(".mil1");
 let mil2=document.querySelector(".mil2");
 let mil3=document.querySelector(".mil3");
 let mil4=document.querySelector(".mil4");
 let mil5=document.querySelector(".mil5");
-let mil6=document.querySelector(".mil6");
-
-let arrymil=[mil1,mil2,mil3,mil4,mil5,mil6];
+let arrymil=[mil1,mil2,mil3,mil4,mil5];
 let ml=0;
     function cheksowmil1(){
         ml=1;
@@ -155,13 +164,6 @@ let ml=0;
         for(let i=0;i<5;i++){
             if(ml==i+1){
                 milie[i].innerHTML=arrymil[4].innerHTML;
-            }
-        }
-    }
-    function milieu6(){
-        for(let i=0;i<6;i++){
-            if(ml==i+1){
-                milie[i].innerHTML=arrymil[5].innerHTML;
             }
         }
     }
@@ -275,13 +277,6 @@ let atccart=document.querySelectorAll(".atccart");
             }
         }
     }
-    function atac5(){
-        for(let i=0;i<5;i++){
-            if(atc==i+1){
-                atccart[i].innerHTML=atco[4].innerHTML;
-            }
-        }
-    }
 
 let backgajout=document.querySelector(".ajout");
 let dabab=document.querySelector(".dabab");
@@ -295,86 +290,49 @@ let dabab=document.querySelector(".dabab");
         dabab.classList.remove('blur-sm')
     }
 
-let name=document.querySelector("#nam").value;
-let position=document.querySelector("#pos").value;
-let club=document.querySelector("#clu").value;
-let image=document.querySelector("#ime").value;
-let pas=document.querySelector("#pas").value;
-let dri=document.querySelector("#dri").value;
-let defplayer=document.querySelector("#def").value;
-let phy=document.querySelector("#phy").value;
-let pac=document.querySelector("#pac").value;
-let sho=document.querySelector("#sho").value;
-
-let h=5;
-let m=6;
-
+let name=document.getElementById("nam");
+let position=document.getElementById("pos");
+let club=document.getElementById("clu");
+let image=document.getElementById("ime");
+let pas=document.getElementById("pas");
+let dri=document.getElementById("dri");
+let defplayer=document.getElementById("def");
+let phy=document.getElementById("phy");
+let pac=document.getElementById("pac");
+let sho=document.getElementById("sho");
+let haris=document.querySelector(".haris");
+let i=2;
+let dev;
     function creatplayer(){
-        let hojo=document.querySelector(".hojo");
-        if(position!=='ST'||'RW'||'LW'){
-            document.write("hamza");
-            if(h>5){
-                alert("hamzaatac");
-                return;
-            }
-           hojo.innerHTML=`<div class="item w-[5rem] relative " onclick="atac${h}()">
-           <div class="absolute left-[0.7rem] top-[1.3rem]">
-               <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80 "></h2>
-               <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
-               <img src="img-fotball/logo-AS-Roma-removebg-preview.png" alt="" class="w-[0.7rem]  opacity-60 ml-[2px]">
-           </div>
-           <img src="img-fotball/${image}" alt="" class="w-[5rem]  absolute bottom-[2.8rem] imgPlayer">
-           <h2 class="text-[#fff] text-[7px] font-bold absolute left-[1.6rem] top-[0.6rem] opacity-80 NamePlayer">${name}</h2>
-           <p class="positionPlayer">${position}</p>
-           <div class="flex text-[#fff] text-[5px] absolute bottom-5 right-4 gap-[0.5rem] opacity-80">
-               <div>
-                   <h3>Pac :<span class="pasPlayer">${pac}</span></h3>
-                   <h3>Sho : <span class="ShoPlayer">${sho}</span></h3>
-                   <h3>Pas : <span class="PasPlayer">${pas}</span></h3>
-               </div>
-               <div>
-                   <h3>Dri : <span class="DriPlayer">${dri}</span></h3>
-                   <h3>Def : <span class="DefPlayer">${defplayer}</span></h3>
-                   <h3>Phy : <span class="PhyPlayer">${phy}</span></h3>
-               </div>
-               </div>
-           </div>`
-          
-            h++;
-        }else if(position==='CM'){
-          let wasat=document.querySelector(".wasat");
-          wasat.innerHTML=` <div class="item w-[5rem] relative " onclick="milieu${m}()">
-          <div class="absolute left-[0.7rem] top-[1.3rem]">
-              <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80 "></h2>
-              <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
-              <img src="img-fotball/logo-AS-Roma-removebg-preview.png" alt="" class="w-[0.7rem]  opacity-60 ml-[2px]">
-          </div>
-          <img src="img-fotball/${image.value}" alt="" class="w-[5rem]  absolute bottom-[2.8rem] imgPlayer">
-          <h2 class="text-[#fff] text-[7px] font-bold absolute left-[1.6rem] top-[0.6rem] opacity-80 NamePlayer">${name.value}</h2>
-          <p class="positionPlayer">${position.value}</p>
-          <div class="flex text-[#fff] text-[5px] absolute bottom-5 right-4 gap-[0.5rem] opacity-80">
-              <div>
-                  <h3>Pac :<span class="pasPlayer">${pac.value}</span></h3>
-                  <h3>Sho : <span class="ShoPlayer">${sho.value}</span></h3>
-                  <h3>Pas : <span class="PasPlayer">${pas.value}</span></h3>
-              </div>
-              <div>
-                  <h3>Dri : <span class="DriPlayer">${dri.value}</span></h3>
-                  <h3>Def : <span class="DefPlayer">${defplayer.value}</span></h3>
-                  <h3>Phy : <span class="PhyPlayer">${phy.value}</span></h3>
-              </div>
-              </div>
-          </div>`
-            if(m>6){
-                alert("hamzamil");
-                return;
-            }
-            m++;
+        if(i>2){
+            alert("hamza");
+            return;
         }
-      
+        haris.innerHTML+=` <div class="item w-[5rem] relative " onclick="buttongk${i}()">
+                                        <div class="absolute left-[0.7rem] top-[1.3rem]">
+                                            <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80 "></h2>
+                                            <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
+                                            <img src="img-fotball/logo-AS-Roma-removebg-preview.png" alt="" class="w-[0.7rem]  opacity-60 ml-[2px]">
+                                        </div>
+                                        <img src="img-fotball/${image.value}" alt="" class="w-[5rem]  absolute bottom-[2.8rem] imgPlayer">
+                                        <h2 class="text-[#fff] text-[7px] font-bold absolute left-[1.6rem] top-[0.6rem] opacity-80 NamePlayer">${name.value}</h2>
+                                        <p class="positionPlayer">${position.value}</p>
+                                        <div class="flex text-[#fff] text-[5px] absolute bottom-5 right-4 gap-[0.5rem] opacity-80">
+                                            <div>
+                                                <h3>Pac :<span class="pasPlayer">${pac.value}</span></h3>
+                                                <h3>Sho : <span class="ShoPlayer">${sho.value}</span></h3>
+                                                <h3>Pas : <span class="PasPlayer">${pas.value}</span></h3>
+                                            </div>
+                                            <div>
+                                                <h3>Dri : <span class="DriPlayer">${dri.value}</span></h3>
+                                                <h3>Def : <span class="DefPlayer">${defplayer.value}</span></h3>
+                                                <h3>Phy : <span class="PhyPlayer">${phy.value}</span></h3>
+                                            </div>
+                                            </div>
+                                        </div>`
                                         backgajout.classList.add('hidden')
                                         dabab.classList.remove('blur-sm')
-                                       
+                                        i++;
                                     }
                                     
                                     
