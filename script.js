@@ -122,6 +122,13 @@ let ml=0;
         
         for(let i=0;i<5;i++){
             if(ml==i+1){
+                for(let j=0;j<5;j++){
+                                if(milie[j].innerHTML===arrymil[0].innerHTML){
+                                    alert("mawjoda");
+                                    return;
+                                }
+                                
+                            }
                 milie[i].innerHTML=arrymil[0].innerHTML;
             }
 
@@ -130,6 +137,13 @@ let ml=0;
     function milieu2(){
         for(let i=0;i<5;i++){
             if(ml==i+1){
+                for(let j=0;j<5;j++){
+                    if(milie[j].innerHTML===arrymil[1].innerHTML){
+                        alert("mawjoda");
+                        return;
+                    }
+                    
+                }
                 milie[i].innerHTML=arrymil[1].innerHTML;
             }
         }
@@ -137,6 +151,13 @@ let ml=0;
     function milieu3(){
         for(let i=0;i<5;i++){
             if(ml==i+1){
+                for(let j=0;j<5;j++){
+                    if(milie[j].innerHTML===arrymil[2].innerHTML){
+                        alert("mawjoda");
+                        return;
+                    }
+                    
+                }
                 milie[i].innerHTML=arrymil[2].innerHTML;
             }
         }
@@ -145,6 +166,13 @@ let ml=0;
     function milieu4(){
         for(let i=0;i<5;i++){
             if(ml==i+1){
+                for(let j=0;j<5;j++){
+                    if(milie[j].innerHTML===arrymil[3].innerHTML){
+                        alert("mawjoda");
+                        return;
+                    }
+                    
+                }
                 milie[i].innerHTML=arrymil[3].innerHTML;
             }
         }
@@ -153,6 +181,13 @@ let ml=0;
     function milieu5(){
         for(let i=0;i<5;i++){
             if(ml==i+1){
+                for(let j=0;j<5;j++){
+                    if(milie[j].innerHTML===arrymil[4].innerHTML){
+                        alert("mawjoda");
+                        return;
+                    }
+                    
+                }
                 milie[i].innerHTML=arrymil[4].innerHTML;
             }
         }
@@ -160,6 +195,13 @@ let ml=0;
     function milieu6(){
         for(let i=0;i<5;i++){
             if(ml==i+1){
+                for(let j=0;j<5;j++){
+                    if(milie[j].innerHTML===arrymil[5].innerHTML){
+                        alert("mawjoda");
+                        return;
+                    }
+                    
+                }
                 milie[i].innerHTML=arrymil[5].innerHTML;
             }
         }
