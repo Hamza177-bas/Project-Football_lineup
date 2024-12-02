@@ -7,15 +7,15 @@ let currentIndex = 0;
         images[currentIndex].classList.add('opacity-40');
 
         let oldIndex = currentIndex;
-        setTimeout(() => {
+        setTimeout(function () {
             images[oldIndex].classList.add('hidden');
         }, 500);
 
         currentIndex = (currentIndex + 1) % images.length;
 
-        setTimeout(() => {
+        setTimeout(function () {
             images[currentIndex].classList.remove('hidden');
-            setTimeout(() => {
+            setTimeout(function () {
                 images[currentIndex].classList.add('opacity-40');
                 images[currentIndex].classList.remove('opacity-0');
             }, 10);
@@ -80,7 +80,7 @@ let c=0;
             a[2].style.display="block"
         }
 }
-// let kg=document.querySelectorAll(".kg")
+
 function buttongk2(){
     if(c===2){
         car.innerHTML=a[2].innerHTML
@@ -89,22 +89,11 @@ function buttongk2(){
         a[0].style.display="block"
     }else if(c===1){
         car1.innerHTML=a[2].innerHTML
-        a[2][0].style.display="none"
+        a[2].style.display="none"
         a[1].style.display="block"
         a[0].style.display="block"
     }
 }
-// function buttongk3(){
-//     if(c===2){
-//         car.innerHTML=a[1].innerHTML
-//         a[1].style.display="none"
-//         a[0].style.display="block"
-//     }else if(c===1){
-//         car1.innerHTML=a[1].innerHTML
-//         a[1].style.display="none"
-//         a[0].style.display="block"
-//     }
-// }
 let milie=document.querySelectorAll(".micm");
 let mil1=document.querySelector(".mil1");
 let mil2=document.querySelector(".mil2");
@@ -199,52 +188,110 @@ let vardefen=document.querySelectorAll(".defen");
     function defen1(){
         for(let i=0;i<6;i++){
             if(def==i+1){
+                for(let j=0;j<6;j++){
+                    if(vardefen[j].innerHTML===vardef1[0].innerHTML){
+                        alert("mawjoda");
+                        return;
+                    }
+
+                    
+                    
+                }
                 vardefen[i].innerHTML=vardef1[0].innerHTML;
+
             }
         }
     }
     function defen2(){
         for(let i=0;i<6;i++){
             if(def==i+1){
+                for(let j=0;j<6;j++){
+                    if(vardefen[j].innerHTML===vardef1[1].innerHTML){
+                        alert("mawjoda");
+                        return;
+                    }
+                    
+                }
                 vardefen[i].innerHTML=vardef1[1].innerHTML;
-            }
         }
     }
+}
     function defen3(){
         for(let i=0;i<6;i++){
             if(def==i+1){
+                for(let j=0;j<6;j++){
+                    if(vardefen[j].innerHTML===vardef1[2].innerHTML){
+                        alert("mawjoda");
+                        return;
+                    }
+                    
+                }
                 vardefen[i].innerHTML=vardef1[2].innerHTML;
-            }
+            
         }
     }
+}
     function defen4(){
         for(let i=0;i<6;i++){
             if(def==i+1){
+
+                for(let j=0;j<6;j++){
+                    if(vardefen[j].innerHTML===vardef1[3].innerHTML){
+                        alert("mawjoda");
+                        return;
+                    }
+                
+                }
                 vardefen[i].innerHTML=vardef1[3].innerHTML;
             }
+            
         }
     }
     function defen5(){
         for(let i=0;i<6;i++){
             if(def==i+1){
+                for(let j=0;j<6;j++){
+                    if(vardefen[j].innerHTML===vardef1[4].innerHTML){
+                        alert("mawjoda");
+                        return;
+                    }
+                    
+                }
                 vardefen[i].innerHTML=vardef1[4].innerHTML;
             }
         }
+
     }
     function defen6(){
         for(let i=0;i<6;i++){
             if(def==i+1){
+                for(let j=0;j<6;j++){
+                    if(vardefen[j].innerHTML===vardef1[5].innerHTML){
+                        alert("mawjoda");
+                        return;
+                    }
+                    
+                }
                 vardefen[i].innerHTML=vardef1[5].innerHTML;
             }
         }
+        
     }
     function defen7(){
         for(let i=0;i<6;i++){
             if(def==i+1){
+                for(let j=0;j<6;j++){
+                    if(vardefen[j].innerHTML===vardef1[6].innerHTML){
+                        alert("mawjoda");
+                        return;
+                    }
+                    
+                }
                 vardefen[i].innerHTML=vardef1[6].innerHTML;
             }
         }
     }
+  
 
 let atc=0;
 
@@ -315,7 +362,7 @@ let dabab=document.querySelector(".dabab");
 let name=document.getElementById("nam");
 let position=document.getElementById("pos");
 let club=document.getElementById("clu");
-let image=document.getElementById("ime");
+let rating=document.getElementById("ime");
 let pas=document.getElementById("pas");
 let dri=document.getElementById("dri");
 let defplayer=document.getElementById("def");
@@ -339,11 +386,11 @@ let dev;
             }
             haris.innerHTML=` <div class="item w-[5rem] relative " onclick="buttongk${i}()">
                                             <div class="absolute left-[0.7rem] top-[1.3rem]">
-                                                <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80 "></h2>
+                                                <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80 ">${rating.value}</h2>
                                                 <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
                                                 <img src="img-fotball/logo-AS-Roma-removebg-preview.png" alt="" class="w-[0.7rem]  opacity-60 ml-[2px]">
                                             </div>
-                                            <img src="img-fotball/${image.value}" alt="" class="w-[5rem]  absolute bottom-[2.8rem] imgPlayer">
+                                             <img src="img-fotball/img-create-player-removebg-preview (2).png" alt="" class="w-[4rem]  absolute bottom-[2.5rem] left-[0.6rem]">
                                             <h2 class="text-[#fff] text-[7px] font-bold absolute left-[1.6rem] top-[0.6rem] opacity-80 NamePlayer">${name.value}</h2>
                                             <p class="positionPlayer">${position.value}</p>
                                             <div class="flex text-[#fff] text-[5px] absolute bottom-5 right-4 gap-[0.5rem] opacity-80">
@@ -369,11 +416,11 @@ let dev;
             }
             hojo.innerHTML=` <div class="item w-[5rem] relative " onclick="atac${h}()">
             <div class="absolute left-[0.7rem] top-[1.3rem]">
-                <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80 "></h2>
+                <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80 ">${rating.value}</h2>
                 <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
                 <img src="img-fotball/logo-AS-Roma-removebg-preview.png" alt="" class="w-[0.7rem]  opacity-60 ml-[2px]">
             </div>
-            <img src="img-fotball/${image.value}" alt="" class="w-[5rem]  absolute bottom-[2.8rem] imgPlayer">
+            <img src="img-fotball/img-create-player-removebg-preview (2).png" alt="" class="w-[4rem]  absolute bottom-[2.5rem] left-[0.6rem]">
             <h2 class="text-[#fff] text-[7px] font-bold absolute left-[1.6rem] top-[0.6rem] opacity-80 NamePlayer">${name.value}</h2>
             <p class="positionPlayer">${position.value}</p>
             <div class="flex text-[#fff] text-[5px] absolute bottom-5 right-4 gap-[0.5rem] opacity-80">
@@ -399,11 +446,11 @@ let dev;
             }
             wasat.innerHTML=` <div class="item w-[5rem] relative " onclick="milieu${w}()">
             <div class="absolute left-[0.7rem] top-[1.3rem]">
-                <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80 "></h2>
+                <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80 ">${rating.value}</h2>
                 <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
                 <img src="img-fotball/logo-AS-Roma-removebg-preview.png" alt="" class="w-[0.7rem]  opacity-60 ml-[2px]">
             </div>
-            <img src="img-fotball/${image.value}" alt="" class="w-[5rem]  absolute bottom-[2.8rem] imgPlayer">
+            <img src="img-fotball/img-create-player-removebg-preview (2).png" alt="" class="w-[4rem]  absolute bottom-[2.5rem] left-[0.6rem]">
             <h2 class="text-[#fff] text-[7px] font-bold absolute left-[1.6rem] top-[0.6rem] opacity-80 NamePlayer">${name.value}</h2>
             <p class="positionPlayer">${position.value}</p>
             <div class="flex text-[#fff] text-[5px] absolute bottom-5 right-4 gap-[0.5rem] opacity-80">
@@ -429,11 +476,11 @@ let dev;
             }
             difenc.innerHTML=` <div class="item w-[5rem] relative " onclick="defen${d}()">
             <div class="absolute left-[0.7rem] top-[1.3rem]">
-                <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80 "></h2>
+                <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80 ">${rating.value}</h2>
                 <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
                 <img src="img-fotball/logo-AS-Roma-removebg-preview.png" alt="" class="w-[0.7rem]  opacity-60 ml-[2px]">
             </div>
-            <img src="img-fotball/${image.value}" alt="" class="w-[5rem]  absolute bottom-[2.8rem] imgPlayer">
+             <img src="img-fotball/img-create-player-removebg-preview (2).png" alt="" class="w-[3.8rem]  absolute bottom-[2.5rem] left-[0.6rem]">
             <h2 class="text-[#fff] text-[7px] font-bold absolute left-[1.6rem] top-[0.6rem] opacity-80 NamePlayer">${name.value}</h2>
             <p class="positionPlayer">${position.value}</p>
             <div class="flex text-[#fff] text-[5px] absolute bottom-5 right-4 gap-[0.5rem] opacity-80">
@@ -455,5 +502,6 @@ let dev;
         }
 
         
-                                    }
-        
+        }
+
+
