@@ -111,7 +111,8 @@ let mil2=document.querySelector(".mil2");
 let mil3=document.querySelector(".mil3");
 let mil4=document.querySelector(".mil4");
 let mil5=document.querySelector(".mil5");
-let arrymil=[mil1,mil2,mil3,mil4,mil5];
+let mil6=document.querySelector(".mil6");
+let arrymil=[mil1,mil2,mil3,mil4,mil5,mil6];
 let ml=0;
     function cheksowmil1(){
         ml=1;
@@ -164,6 +165,13 @@ let ml=0;
         for(let i=0;i<5;i++){
             if(ml==i+1){
                 milie[i].innerHTML=arrymil[4].innerHTML;
+            }
+        }
+    }
+    function milieu6(){
+        for(let i=0;i<5;i++){
+            if(ml==i+1){
+                milie[i].innerHTML=arrymil[5].innerHTML;
             }
         }
     }
@@ -230,6 +238,13 @@ let vardefen=document.querySelectorAll(".defen");
             }
         }
     }
+    function defen7(){
+        for(let i=0;i<6;i++){
+            if(def==i+1){
+                vardefen[i].innerHTML=vardef1[6].innerHTML;
+            }
+        }
+    }
 
 let atc=0;
 
@@ -277,6 +292,13 @@ let atccart=document.querySelectorAll(".atccart");
             }
         }
     }
+    function atac5(){
+        for(let i=0;i<5;i++){
+            if(atc==i+1){
+                atccart[i].innerHTML=atco[4].innerHTML;
+            }
+        }
+    }
 
 let backgajout=document.querySelector(".ajout");
 let dabab=document.querySelector(".dabab");
@@ -301,38 +323,137 @@ let phy=document.getElementById("phy");
 let pac=document.getElementById("pac");
 let sho=document.getElementById("sho");
 let haris=document.querySelector(".haris");
+let hojo=document.querySelector(".hojo");
+let wasat=document.querySelector(".wasat");
+let difenc=document.querySelector(".defense");
 let i=2;
+let h=5;
+let w=6;
+let d=7;
 let dev;
     function creatplayer(){
-        if(i>2){
-            alert("hamza");
-            return;
+        if(position.value==="GK"){
+            if(i>2){
+                alert("laaaaaaaa 3afak");
+                return;
+            }
+            haris.innerHTML=` <div class="item w-[5rem] relative " onclick="buttongk${i}()">
+                                            <div class="absolute left-[0.7rem] top-[1.3rem]">
+                                                <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80 "></h2>
+                                                <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
+                                                <img src="img-fotball/logo-AS-Roma-removebg-preview.png" alt="" class="w-[0.7rem]  opacity-60 ml-[2px]">
+                                            </div>
+                                            <img src="img-fotball/${image.value}" alt="" class="w-[5rem]  absolute bottom-[2.8rem] imgPlayer">
+                                            <h2 class="text-[#fff] text-[7px] font-bold absolute left-[1.6rem] top-[0.6rem] opacity-80 NamePlayer">${name.value}</h2>
+                                            <p class="positionPlayer">${position.value}</p>
+                                            <div class="flex text-[#fff] text-[5px] absolute bottom-5 right-4 gap-[0.5rem] opacity-80">
+                                                <div>
+                                                    <h3>Pac :<span class="pasPlayer">${pac.value}</span></h3>
+                                                    <h3>Sho : <span class="ShoPlayer">${sho.value}</span></h3>
+                                                    <h3>Pas : <span class="PasPlayer">${pas.value}</span></h3>
+                                                </div>
+                                                <div>
+                                                    <h3>Dri : <span class="DriPlayer">${dri.value}</span></h3>
+                                                    <h3>Def : <span class="DefPlayer">${defplayer.value}</span></h3>
+                                                    <h3>Phy : <span class="PhyPlayer">${phy.value}</span></h3>
+                                                </div>
+                                                </div>
+                                            </div>`
+                                            backgajout.classList.add('hidden')
+                                            dabab.classList.remove('blur-sm')
+                                            i++;
+        }else if(position.value==="ST"||position.value==="LW"||position.value==="RW"){
+            if(h>5){
+                alert("laaaaaaaa 3afak");
+                return;
+            }
+            hojo.innerHTML=` <div class="item w-[5rem] relative " onclick="atac${h}()">
+            <div class="absolute left-[0.7rem] top-[1.3rem]">
+                <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80 "></h2>
+                <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
+                <img src="img-fotball/logo-AS-Roma-removebg-preview.png" alt="" class="w-[0.7rem]  opacity-60 ml-[2px]">
+            </div>
+            <img src="img-fotball/${image.value}" alt="" class="w-[5rem]  absolute bottom-[2.8rem] imgPlayer">
+            <h2 class="text-[#fff] text-[7px] font-bold absolute left-[1.6rem] top-[0.6rem] opacity-80 NamePlayer">${name.value}</h2>
+            <p class="positionPlayer">${position.value}</p>
+            <div class="flex text-[#fff] text-[5px] absolute bottom-5 right-4 gap-[0.5rem] opacity-80">
+                <div>
+                    <h3>Pac :<span class="pasPlayer">${pac.value}</span></h3>
+                    <h3>Sho : <span class="ShoPlayer">${sho.value}</span></h3>
+                    <h3>Pas : <span class="PasPlayer">${pas.value}</span></h3>
+                </div>
+                <div>
+                    <h3>Dri : <span class="DriPlayer">${dri.value}</span></h3>
+                    <h3>Def : <span class="DefPlayer">${defplayer.value}</span></h3>
+                    <h3>Phy : <span class="PhyPlayer">${phy.value}</span></h3>
+                </div>
+                </div>
+            </div>`
+            backgajout.classList.add('hidden')
+            dabab.classList.remove('blur-sm')
+            h++;
+        }else if(position.value==="CM"){
+            if(w>6){
+                alert("laaaaaaaa 3afak");
+                return;
+            }
+            wasat.innerHTML=` <div class="item w-[5rem] relative " onclick="milieu${w}()">
+            <div class="absolute left-[0.7rem] top-[1.3rem]">
+                <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80 "></h2>
+                <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
+                <img src="img-fotball/logo-AS-Roma-removebg-preview.png" alt="" class="w-[0.7rem]  opacity-60 ml-[2px]">
+            </div>
+            <img src="img-fotball/${image.value}" alt="" class="w-[5rem]  absolute bottom-[2.8rem] imgPlayer">
+            <h2 class="text-[#fff] text-[7px] font-bold absolute left-[1.6rem] top-[0.6rem] opacity-80 NamePlayer">${name.value}</h2>
+            <p class="positionPlayer">${position.value}</p>
+            <div class="flex text-[#fff] text-[5px] absolute bottom-5 right-4 gap-[0.5rem] opacity-80">
+                <div>
+                    <h3>Pac :<span class="pasPlayer">${pac.value}</span></h3>
+                    <h3>Sho : <span class="ShoPlayer">${sho.value}</span></h3>
+                    <h3>Pas : <span class="PasPlayer">${pas.value}</span></h3>
+                </div>
+                <div>
+                    <h3>Dri : <span class="DriPlayer">${dri.value}</span></h3>
+                    <h3>Def : <span class="DefPlayer">${defplayer.value}</span></h3>
+                    <h3>Phy : <span class="PhyPlayer">${phy.value}</span></h3>
+                </div>
+                </div>
+            </div>`
+            backgajout.classList.add('hidden')
+            dabab.classList.remove('blur-sm')
+            w++;
+        }else if(position.value==="CB"||position.value==="LB"||position.value==="RB"){
+            if(d>7){
+                alert("laaaaaaaa 3afak");
+                return;
+            }
+            difenc.innerHTML=` <div class="item w-[5rem] relative " onclick="defen${d}()">
+            <div class="absolute left-[0.7rem] top-[1.3rem]">
+                <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80 "></h2>
+                <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
+                <img src="img-fotball/logo-AS-Roma-removebg-preview.png" alt="" class="w-[0.7rem]  opacity-60 ml-[2px]">
+            </div>
+            <img src="img-fotball/${image.value}" alt="" class="w-[5rem]  absolute bottom-[2.8rem] imgPlayer">
+            <h2 class="text-[#fff] text-[7px] font-bold absolute left-[1.6rem] top-[0.6rem] opacity-80 NamePlayer">${name.value}</h2>
+            <p class="positionPlayer">${position.value}</p>
+            <div class="flex text-[#fff] text-[5px] absolute bottom-5 right-4 gap-[0.5rem] opacity-80">
+                <div>
+                    <h3>Pac :<span class="pasPlayer">${pac.value}</span></h3>
+                    <h3>Sho : <span class="ShoPlayer">${sho.value}</span></h3>
+                    <h3>Pas : <span class="PasPlayer">${pas.value}</span></h3>
+                </div>
+                <div>
+                    <h3>Dri : <span class="DriPlayer">${dri.value}</span></h3>
+                    <h3>Def : <span class="DefPlayer">${defplayer.value}</span></h3>
+                    <h3>Phy : <span class="PhyPlayer">${phy.value}</span></h3>
+                </div>
+                </div>
+            </div>`
+            backgajout.classList.add('hidden')
+            dabab.classList.remove('blur-sm')
+            d++;
         }
-        haris.innerHTML+=` <div class="item w-[5rem] relative " onclick="buttongk${i}()">
-                                        <div class="absolute left-[0.7rem] top-[1.3rem]">
-                                            <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80 "></h2>
-                                            <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
-                                            <img src="img-fotball/logo-AS-Roma-removebg-preview.png" alt="" class="w-[0.7rem]  opacity-60 ml-[2px]">
-                                        </div>
-                                        <img src="img-fotball/${image.value}" alt="" class="w-[5rem]  absolute bottom-[2.8rem] imgPlayer">
-                                        <h2 class="text-[#fff] text-[7px] font-bold absolute left-[1.6rem] top-[0.6rem] opacity-80 NamePlayer">${name.value}</h2>
-                                        <p class="positionPlayer">${position.value}</p>
-                                        <div class="flex text-[#fff] text-[5px] absolute bottom-5 right-4 gap-[0.5rem] opacity-80">
-                                            <div>
-                                                <h3>Pac :<span class="pasPlayer">${pac.value}</span></h3>
-                                                <h3>Sho : <span class="ShoPlayer">${sho.value}</span></h3>
-                                                <h3>Pas : <span class="PasPlayer">${pas.value}</span></h3>
-                                            </div>
-                                            <div>
-                                                <h3>Dri : <span class="DriPlayer">${dri.value}</span></h3>
-                                                <h3>Def : <span class="DefPlayer">${defplayer.value}</span></h3>
-                                                <h3>Phy : <span class="PhyPlayer">${phy.value}</span></h3>
-                                            </div>
-                                            </div>
-                                        </div>`
-                                        backgajout.classList.add('hidden')
-                                        dabab.classList.remove('blur-sm')
-                                        i++;
+
+        
                                     }
-                                    
-                                    
+        
