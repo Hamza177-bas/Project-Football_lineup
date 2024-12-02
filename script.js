@@ -124,7 +124,7 @@ let ml=0;
             if(ml==i+1){
                 for(let j=0;j<5;j++){
                                 if(milie[j].innerHTML===arrymil[0].innerHTML){
-                                    alert("mawjoda");
+                                    messje.classList.remove("hidden");
                                     return;
                                 }
                                 
@@ -139,7 +139,7 @@ let ml=0;
             if(ml==i+1){
                 for(let j=0;j<5;j++){
                     if(milie[j].innerHTML===arrymil[1].innerHTML){
-                        alert("mawjoda");
+                        messje.classList.remove("hidden");
                         return;
                     }
                     
@@ -153,7 +153,7 @@ let ml=0;
             if(ml==i+1){
                 for(let j=0;j<5;j++){
                     if(milie[j].innerHTML===arrymil[2].innerHTML){
-                        alert("mawjoda");
+                        messje.classList.remove("hidden");
                         return;
                     }
                     
@@ -168,7 +168,7 @@ let ml=0;
             if(ml==i+1){
                 for(let j=0;j<5;j++){
                     if(milie[j].innerHTML===arrymil[3].innerHTML){
-                        alert("mawjoda");
+                        messje.classList.remove("hidden");
                         return;
                     }
                     
@@ -183,7 +183,7 @@ let ml=0;
             if(ml==i+1){
                 for(let j=0;j<5;j++){
                     if(milie[j].innerHTML===arrymil[4].innerHTML){
-                        alert("mawjoda");
+                        messje.classList.remove("hidden");
                         return;
                     }
                     
@@ -197,7 +197,7 @@ let ml=0;
             if(ml==i+1){
                 for(let j=0;j<5;j++){
                     if(milie[j].innerHTML===arrymil[5].innerHTML){
-                        alert("mawjoda");
+                        messje.classList.remove("hidden");
                         return;
                     }
                     
@@ -225,6 +225,7 @@ let ml=0;
     function cheksowdefen6(){
         def=6;
     }
+let messje=document.querySelector(".messje");
 let vardef1=document.querySelectorAll(".def")
 let vardefen=document.querySelectorAll(".defen");
     function defen1(){
@@ -232,7 +233,7 @@ let vardefen=document.querySelectorAll(".defen");
             if(def==i+1){
                 for(let j=0;j<6;j++){
                     if(vardefen[j].innerHTML===vardef1[0].innerHTML){
-                        alert("mawjoda");
+                        messje.classList.remove("hidden");
                         return;
                     }
 
@@ -249,7 +250,7 @@ let vardefen=document.querySelectorAll(".defen");
             if(def==i+1){
                 for(let j=0;j<6;j++){
                     if(vardefen[j].innerHTML===vardef1[1].innerHTML){
-                        alert("mawjoda");
+                        messje.classList.remove("hidden");
                         return;
                     }
                     
@@ -263,7 +264,7 @@ let vardefen=document.querySelectorAll(".defen");
             if(def==i+1){
                 for(let j=0;j<6;j++){
                     if(vardefen[j].innerHTML===vardef1[2].innerHTML){
-                        alert("mawjoda");
+                        messje.classList.remove("hidden");
                         return;
                     }
                     
@@ -279,7 +280,7 @@ let vardefen=document.querySelectorAll(".defen");
 
                 for(let j=0;j<6;j++){
                     if(vardefen[j].innerHTML===vardef1[3].innerHTML){
-                        alert("mawjoda");
+                        messje.classList.remove("hidden");
                         return;
                     }
                 
@@ -294,7 +295,7 @@ let vardefen=document.querySelectorAll(".defen");
             if(def==i+1){
                 for(let j=0;j<6;j++){
                     if(vardefen[j].innerHTML===vardef1[4].innerHTML){
-                        alert("mawjoda");
+                        messje.classList.remove("hidden");
                         return;
                     }
                     
@@ -309,7 +310,7 @@ let vardefen=document.querySelectorAll(".defen");
             if(def==i+1){
                 for(let j=0;j<6;j++){
                     if(vardefen[j].innerHTML===vardef1[5].innerHTML){
-                        alert("mawjoda");
+                        messje.classList.remove("hidden");
                         return;
                     }
                     
@@ -324,7 +325,7 @@ let vardefen=document.querySelectorAll(".defen");
             if(def==i+1){
                 for(let j=0;j<6;j++){
                     if(vardefen[j].innerHTML===vardef1[6].innerHTML){
-                        alert("mawjoda");
+                        messje.classList.remove("hidden");
                         return;
                     }
                     
@@ -333,7 +334,7 @@ let vardefen=document.querySelectorAll(".defen");
             }
         }
     }
-  
+
 
 let atc=0;
 
@@ -358,7 +359,7 @@ let atccart=document.querySelectorAll(".atccart");
             if(atc==i+1){
                 for(let j=0;j<4;j++){
                     if(atccart[j].innerHTML===atco[0].innerHTML){
-                        alert("mawjoda");
+                        messje.classList.remove("hidden");
                         return;
                     }
                     
@@ -372,7 +373,7 @@ let atccart=document.querySelectorAll(".atccart");
             if(atc==i+1){
                 for(let j=0;j<4;j++){
                     if(atccart[j].innerHTML===atco[1].innerHTML){
-                        alert("mawjoda");
+                        messje.classList.remove("hidden");
                         return;
                     }
                     
@@ -386,7 +387,7 @@ let atccart=document.querySelectorAll(".atccart");
             if(atc==i+1){
                 for(let j=0;j<4;j++){
                     if(atccart[j].innerHTML===atco[2].innerHTML){
-                        alert("mawjoda");
+                        messje.classList.remove("hidden");
                         return;
                     }
                     
@@ -400,7 +401,7 @@ let atccart=document.querySelectorAll(".atccart");
             if(atc==i+1){
                 for(let j=0;j<4;j++){
                     if(atccart[j].innerHTML===atco[3].innerHTML){
-                        alert("mawjoda");
+                        messje.classList.remove("hidden");
                         return;
                     }
                     
@@ -414,7 +415,7 @@ let atccart=document.querySelectorAll(".atccart");
             if(atc==i+1){
                 for(let j=0;j<5;j++){
                     if(atccart[j].innerHTML===atco[4].innerHTML){
-                        alert("mawjoda");
+                        messje.classList.remove("hidden");
                         return;
                     }
                     
@@ -455,10 +456,11 @@ let h=5;
 let w=6;
 let d=7;
 let dev;
+let blockajout=document.querySelector(".block-ajout");
     function creatplayer(){
         if(position.value==="GK"){
             if(i>2){
-                alert("laaaaaaaa 3afak");
+                blockajout.classList.remove('hidden')
                 return;
             }
             haris.innerHTML=` <div class="item w-[5rem] relative " onclick="buttongk${i}()">
@@ -488,7 +490,7 @@ let dev;
                                             i++;
         }else if(position.value==="ST"||position.value==="LW"||position.value==="RW"){
             if(h>5){
-                alert("laaaaaaaa 3afak");
+                blockajout.classList.remove('hidden')
                 return;
             }
             hojo.innerHTML=` <div class="item w-[5rem] relative " onclick="atac${h}()">
@@ -518,7 +520,7 @@ let dev;
             h++;
         }else if(position.value==="CM"){
             if(w>6){
-                alert("laaaaaaaa 3afak");
+                blockajout.classList.remove('hidden')
                 return;
             }
             wasat.innerHTML=` <div class="item w-[5rem] relative " onclick="milieu${w}()">
@@ -548,7 +550,7 @@ let dev;
             w++;
         }else if(position.value==="CB"||position.value==="LB"||position.value==="RB"){
             if(d>7){
-                alert("laaaaaaaa 3afak");
+                blockajout.classList.remove('hidden')
                 return;
             }
             difenc.innerHTML=` <div class="item w-[5rem] relative " onclick="defen${d}()">
@@ -580,5 +582,12 @@ let dev;
 
         
         }
+
+    function hiddentomessaje(){
+        messje.classList.add("hidden");
+    }
+    function hiddenblockajout(){
+        blockajout.classList.add('hidden')
+    }
 
 
