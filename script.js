@@ -356,6 +356,13 @@ let atccart=document.querySelectorAll(".atccart");
     function atac1(){
         for(let i=0;i<4;i++){
             if(atc==i+1){
+                for(let j=0;j<4;j++){
+                    if(atccart[j].innerHTML===atco[0].innerHTML){
+                        alert("mawjoda");
+                        return;
+                    }
+                    
+                }
                 atccart[i].innerHTML=atco[0].innerHTML;
             }
         }
@@ -363,6 +370,13 @@ let atccart=document.querySelectorAll(".atccart");
     function atac2(){
         for(let i=0;i<4;i++){
             if(atc==i+1){
+                for(let j=0;j<4;j++){
+                    if(atccart[j].innerHTML===atco[1].innerHTML){
+                        alert("mawjoda");
+                        return;
+                    }
+                    
+                }
                 atccart[i].innerHTML=atco[1].innerHTML;
             }
         }
@@ -370,6 +384,13 @@ let atccart=document.querySelectorAll(".atccart");
     function atac3(){
         for(let i=0;i<4;i++){
             if(atc==i+1){
+                for(let j=0;j<4;j++){
+                    if(atccart[j].innerHTML===atco[2].innerHTML){
+                        alert("mawjoda");
+                        return;
+                    }
+                    
+                }
                 atccart[i].innerHTML=atco[2].innerHTML;
             }
         }
@@ -377,6 +398,13 @@ let atccart=document.querySelectorAll(".atccart");
     function atac4(){
         for(let i=0;i<4;i++){
             if(atc==i+1){
+                for(let j=0;j<4;j++){
+                    if(atccart[j].innerHTML===atco[3].innerHTML){
+                        alert("mawjoda");
+                        return;
+                    }
+                    
+                }
                 atccart[i].innerHTML=atco[3].innerHTML;
             }
         }
@@ -384,6 +412,13 @@ let atccart=document.querySelectorAll(".atccart");
     function atac5(){
         for(let i=0;i<5;i++){
             if(atc==i+1){
+                for(let j=0;j<5;j++){
+                    if(atccart[j].innerHTML===atco[4].innerHTML){
+                        alert("mawjoda");
+                        return;
+                    }
+                    
+                }
                 atccart[i].innerHTML=atco[4].innerHTML;
             }
         }
