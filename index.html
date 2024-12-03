@@ -63,11 +63,11 @@
                             <div class="flex gap-[1rem] justify-center">
                                 <div class="w-[5rem] item atccart">
                                     <p>RW</p>
-                                    <button class="btn" onclick="showatac(),chekonclickatac1()">+</button>
+                                    <button class="btn" onclick="showatac(),chekonclickatac('1')">+</button>
                                 </div>
                                 <div class="w-[5rem] item atccart ">
                                     <p>ST</p>
-                                    <button class="btn" onclick="showatac(),chekonclickatac2()">+</button>
+                                    <button class="btn" onclick="showatac(),chekonclickatac('2')">+</button>
                                     
                                     
                                 </div>
@@ -75,37 +75,37 @@
                             <div class="flex gap-[2rem]">
                                 <div class="w-[5rem] item micm">
                                     <p>CM</p>
-                                    <button class="btn" onclick="sowmilieu(),cheksowmil1()">+</button>
+                                    <button class="btn" onclick="sowmilieu(),cheksowmil('1')">+</button>
                                 </div>
                                 <div class="w-[5rem] item micm">
                                     <p>CM</p>
-                                    <button class="btn" onclick="sowmilieu(),cheksowmil2()">+</button>
+                                    <button class="btn" onclick="sowmilieu(),cheksowmil('2')">+</button>
                                 </div>
                                 <div class="w-[5rem] item micm">
                                     <p>CM</p>
-                                    <button class="btn" onclick="sowmilieu(),cheksowmil3()">+</button>
+                                    <button class="btn" onclick="sowmilieu(),cheksowmil('3')">+</button>
                                 </div>
                                 <div class="w-[5rem] item atccart">
                                     <p>LW</p>
-                                    <button class="btn" onclick="showatac(),chekonclickatac3()">+</button>
+                                    <button class="btn" onclick="showatac(),chekonclickatac('3')">+</button>
                                 </div>
                             </div>
                             <div class="flex gap-[2rem]">
                                 <div class="w-[5rem] item defen">
                                     <p>LB</p>
-                                    <button class="btn " onclick="sowdéfense(),cheksowdefen1()">+</button>
+                                    <button class="btn " onclick="sowdéfense(),cheksowdefen('1')">+</button>
                                 </div>
                                 <div class="w-[5rem] item defen">
                                     <p>CB</p>
-                                    <button class="btn " onclick="sowdéfense(),cheksowdefen2()">+</button>
+                                    <button class="btn " onclick="sowdéfense(),cheksowdefen('2')">+</button>
                                 </div>
                                 <div class="w-[5rem] item defen">
                                     <p>CB</p>
-                                    <button class="btn " onclick="sowdéfense(),cheksowdefen3()">+</button>
+                                    <button class="btn " onclick="sowdéfense(),cheksowdefen('3')">+</button>
                                 </div>
                                 <div class="w-[5rem] item defen">
                                     <p>RB</p>
-                                    <button class="btn " onclick="sowdéfense(),cheksowdefen4()">+</button>
+                                    <button class="btn " onclick="sowdéfense(),cheksowdefen('4')">+</button>
                                 </div>
                             </div>
                             <div class="flex gap-[2rem] justify-center">
@@ -129,28 +129,28 @@
                             </div>
                                 <div class="w-[5rem] item defen">
                                     <p>CB</p>
-                                    <button class="btn "onclick="sowdéfense(),cheksowdefen5()">+</button>
+                                    <button class="btn "onclick="sowdéfense(),cheksowdefen('5')">+</button>
                                     
                                 </div>
                             <div class="w-[5rem] item atccart">
                                 <p>ST</p>
-                                    <button class="btn"onclick="showatac(),chekonclickatac4()">+</button>
+                                    <button class="btn"onclick="showatac(),chekonclickatac('4')">+</button>
                                 </div>
                                 
                             <div class="w-[5rem] item micm">
                                 <p>CM</p>
-                                    <button class="btn"onclick="sowmilieu(),cheksowmil4()">+</button>
+                                    <button class="btn"onclick="sowmilieu(),cheksowmil('4')">+</button>
                                 
                             </div>
                             <div class="w-[5rem] item micm">
                                 
                                 <p>CM</p>
-                                    <button class="btn" onclick="sowmilieu(),cheksowmil5()">+</button>
+                                    <button class="btn" onclick="sowmilieu(),cheksowmil('5')">+</button>
                             </div>
                             <div class="w-[5rem] item defen">
                                 
                                 <p>RB</p>
-                                    <button class="btn"onclick="sowdéfense(),cheksowdefen6()">+</button>
+                                    <button class="btn"onclick="sowdéfense(),cheksowdefen('6')">+</button>
                             </div>
                              <!-- ajout -->
                              <div class="w-[5rem] item " onclick="btnajout()">
@@ -164,7 +164,7 @@
                                 <div class="flex">
     
                                     <!-- LW -->
-                                    <div class="item w-[5rem] relative atc" onclick="atac1()">
+                                    <div class="item w-[5rem] relative atc" onclick="atac('0')">
                                       <div class="absolute left-[0.7rem] top-[1.3rem]">
                                           <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80">90</h2>
                                           <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
@@ -186,11 +186,11 @@
                                           </div>
                                       </div>
                                       <!-- pobile -->
-                                      <img src="img-fotball/pobile.png" alt="" class="w-[20px] absolute bottom-2 right-0  pobile2 ">`
+                                      <img src="img-fotball/pobile.png" alt="" class="w-[20px] absolute bottom-2 right-0  pobile2 " onclick="copycart('0')">
           
                                     </div>
                                   <!-- RW -->
-                                  <div class="item w-[5rem] relative atc" onclick="atac2()">
+                                  <div class="item w-[5rem] relative atc" onclick="atac('1')">
                                       <div class="absolute left-[0.7rem] top-[1.3rem]">
                                           <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80">86</h2>
                                           <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
@@ -212,11 +212,11 @@
                                           </div>
                                       </div>
                                     <!-- pobile -->
-                                <img src="img-fotball/pobile.png" alt="" class="w-[20px] absolute bottom-2 right-0  pobile" onclick="copycart()">`
+                                <img src="img-fotball/pobile.png" alt="" class="w-[20px] absolute bottom-2 right-0  pobile" onclick="copycart('1')">
 
                                 </div>
                                   <!-- ST -->
-                                  <div class="item w-[5rem] relative atc" onclick="atac3()">
+                                  <div class="item w-[5rem] relative atc" onclick="atac('2')">
                                       <div class="absolute left-[0.7rem] top-[1.3rem]">
                                           <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80">89</h2>
                                           <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
@@ -239,12 +239,12 @@
                                       </div>
                                         <!-- pobile -->
                                          <!-- pobile -->
-                                <img src="img-fotball/pobile.png" alt="" class="w-[20px] absolute bottom-2 right-0  pobile2 ">`
+                                <img src="img-fotball/pobile.png" alt="" class="w-[20px] absolute bottom-2 right-0  pobile2 " onclick="copycart('2')">
           
                                    
                                   </div>
                                   <!-- ST -->
-                                  <div class="item w-[5rem] relative atc" onclick="atac4()">
+                                  <div class="item w-[5rem] relative atc" onclick="atac('3')">
                                       <div class="absolute left-[0.7rem] top-[1.3rem]">
                                           <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80">85</h2>
                                           <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
@@ -266,7 +266,7 @@
                                           </div>
                                       </div>
                                         <!-- pobile -->
-                                        <img src="img-fotball/pobile.png" alt="" class="w-[20px] absolute bottom-2 right-0  pobile2 ">`
+                                        <img src="img-fotball/pobile.png" alt="" class="w-[20px] absolute bottom-2 right-0  pobile2 " onclick="copycart('3')">
           
                                    
                                   </div>
@@ -284,7 +284,7 @@
                                 <div class="flex">
     
                                     <!-- CM -->
-                                    <div class="item  relative mil1" onclick="milieu1()">
+                                    <div class="item  relative mil1" onclick="milieus('0')">
                                       <div class="absolute left-[0.7rem] top-[1.3rem]">
                                           <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80">80</h2>
                                           <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
@@ -310,7 +310,7 @@
                                    
                                     </div>
                                     <!-- CM -->
-                                    <div class="item relative mil2" onclick="milieu2()">
+                                    <div class="item relative mil2" onclick="milieus('1')">
                                       <div class="absolute left-[0.7rem] top-[1.3rem]">
                                           <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80">81</h2>
                                           <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
@@ -336,7 +336,7 @@
                                    
                                     </div>
                                     <!-- CM -->
-                                <div class="item  relative mil3" onclick="milieu3()">
+                                <div class="item  relative mil3" onclick="milieus('2')">
                                       <div class="absolute left-[0.7rem] top-[1.3rem]">
                                           <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80">83</h2>
                                           <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
@@ -362,7 +362,7 @@
                                    
                                 </div>
                                     <!-- CM -->
-                                    <div class="item  relative mil4" onclick="milieu4()">
+                                    <div class="item  relative mil4" onclick="milieus('3')">
                                       <div class="absolute left-[0.7rem] top-[1.3rem]">
                                           <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80">86</h2>
                                           <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
@@ -388,7 +388,7 @@
                                    
                                 </div>
                                     <!-- CM -->
-                                <div class="item relative mil5" onclick="milieu5()">
+                                <div class="item relative mil5" onclick="milieus('4')">
                                       <div class="absolute left-[0.7rem] top-[1.3rem]">
                                           <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80">79</h2>
                                           <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
@@ -431,7 +431,7 @@
                                 <div class="flex">
     
                                     <!-- RB -->
-                                    <div class="item  relative def" onclick="defen1()" >
+                                    <div class="item  relative def" onclick="defen('0')" >
                                         <div class="absolute left-[0.7rem] top-[1.3rem]">
                                             <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80">79</h2>
                                             <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
@@ -457,7 +457,7 @@
                                    
                                     </div>
                                     <!-- cb -->
-                                    <div class="item  relative def" onclick="defen2()">
+                                    <div class="item  relative def" onclick="defen('1')">
                                         <div class="absolute left-[0.7rem] top-[1.3rem]">
                                             <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80">80</h2>
                                             <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
@@ -483,7 +483,7 @@
                                    
                                     </div>
                                     <!-- cb -->
-                                    <div class="item  relative def" onclick="defen3()">
+                                    <div class="item  relative def" onclick="defen('2')">
                                         <div class="absolute left-[0.7rem] top-[1.3rem]">
                                             <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80">85</h2>
                                             <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
@@ -513,7 +513,7 @@
                             <div class="défense1">
                                 <div class="flex ">
                                     <!-- LB -->
-                                    <div class="item  relative def" onclick="defen4()">
+                                    <div class="item  relative def" onclick="defen('3')">
                                      <div class="absolute left-[0.7rem] top-[1.3rem]">
                                          <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80">81</h2>
                                          <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
@@ -539,7 +539,7 @@
                                    
                               </div>
                                   <!-- RB -->
-                                <div class="item  relative def" onclick="defen5()">
+                                <div class="item  relative def" onclick="defen('4')">
                                      <div class="absolute left-[0.7rem] top-[1.3rem]">
                                          <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80">81</h2>
                                          <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
@@ -565,7 +565,7 @@
                                    
                                 </div>
                                 <!-- cb -->
-                                <div class="item  relative def" onclick="defen6()">
+                                <div class="item  relative def" onclick="defen('5')">
                                 <div class="absolute left-[0.7rem] top-[1.3rem]">
                                     <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80">85</h2>
                                     <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
@@ -744,7 +744,7 @@
             
         </div>
         <div class="messje bg-[#d01818] text-[#fff] w-[15rem] h-[2rem] text-center absolute top-[47rem] left-[8rem] hidden"> Player in the squad <button class="ml-[4rem] " onclick="hiddentomessaje()">X</button></div>
-                        <div class="block-ajout bg-[#d01818] text-[#fff] w-[35rem] h-[2rem] text-center absolute top-[43rem] left-[25rem] hidden">You have reached the maximum number of players in this position. <button class="ml-[4rem] " onclick="hiddenblockajout()">X</button></div>
+                        <div class="block-ajout bg-[#d01818] text-[#fff] w-[35rem] h-[2rem] text-center absolute top-[43rem] left-[25rem] hidden">You have reached the maximum number of players in this position. <button class="ml-[4rem] " onclick="hiddblockajout()">X</button></div>
 
         HDHDHJSDJKSDJKSDKJ
     </section>

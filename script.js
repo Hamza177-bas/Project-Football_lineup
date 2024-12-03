@@ -1,6 +1,7 @@
 let images = document.querySelectorAll('.carousel-item');
 let currentIndex = 0;
 
+// function Special for slaider
 
     function showNextImage() {
         images[currentIndex].classList.remove('opacity-40');
@@ -21,8 +22,7 @@ let currentIndex = 0;
             }, 10);
         }, 500);
 
-}
-
+    }
 setInterval(showNextImage, 2000);
 
 let cardts=document.querySelector(".cardts")
@@ -31,29 +31,34 @@ let milieu=document.querySelector(".milieu")
 let defense=document.querySelector(".défense")
 let garde=document.querySelector(".garde")
 let defense1=document.querySelector(".défense1")
+
+// functions Transferring date players to interfase
+
     function showatac(){
         cardts.innerHTML=hojom.innerHTML;
-}
+    }
     function sowmilieu(){
         cardts.innerHTML=milieu.innerHTML;
-}
+    }
     function sowdéfense(){
         cardts.innerHTML=defense.innerHTML;
         cardts.innerHTML+=defense1.innerHTML;
-}
+    }
     function sowgarde(){
         cardts.innerHTML=garde.innerHTML;
-}
+    }
+
 let a=document.querySelectorAll(".gk");
 let car=document.querySelector('.car');
 let car1=document.querySelector('.car1');
 let c=0;
-    function chek(){
-        c=2;
-}
+
+    function chek(rs){
+       c=2;
+    }
     function chek1(){
         c=1;
-}
+    }
     function buttongk(){
         if(c===2){
             car.innerHTML=a[0].innerHTML;
@@ -66,7 +71,7 @@ let c=0;
             a[1].style.display="block"
             a[2].style.display="block"
         }
-}
+    }
     function buttongk1(){
         if(c===2){
             car.innerHTML=a[1].innerHTML
@@ -79,21 +84,21 @@ let c=0;
             a[0].style.display="block"
             a[2].style.display="block"
         }
-}
-
-function buttongk2(){
-    if(c===2){
-        car.innerHTML=a[2].innerHTML
-        a[2].style.display="none"
-        a[1].style.display="block"
-        a[0].style.display="block"
-    }else if(c===1){
-        car1.innerHTML=a[2].innerHTML
-        a[2].style.display="none"
-        a[1].style.display="block"
-        a[0].style.display="block"
     }
-}
+    function buttongk2(){
+        if(c===2){
+            car.innerHTML=a[2].innerHTML
+            a[2].style.display="none"
+            a[1].style.display="block"
+            a[0].style.display="block"
+        }else if(c===1){
+            car1.innerHTML=a[2].innerHTML
+            a[2].style.display="none"
+            a[1].style.display="block"
+            a[0].style.display="block"
+        }
+    }
+
 let milie=document.querySelectorAll(".micm");
 let mil1=document.querySelector(".mil1");
 let mil2=document.querySelector(".mil2");
@@ -103,139 +108,40 @@ let mil5=document.querySelector(".mil5");
 let mil6=document.querySelector(".mil6");
 let arrymil=[mil1,mil2,mil3,mil4,mil5,mil6];
 let ml=0;
-    function cheksowmil1(){
-        ml=1;
+
+    function cheksowmil(mil){
+        ml=mil;
     }
-    function cheksowmil2(){
-        ml=2;
-    }
-    function cheksowmil3(){
-        ml=3;
-    }
-    function cheksowmil4(){
-        ml=4;
-    }
-    function cheksowmil5(){
-        ml=5;
-    }
-    function milieu1(){
+    function milieus(n){
         
         for(let i=0;i<5;i++){
             if(ml==i+1){
                 for(let j=0;j<5;j++){
-                                if(milie[j].innerHTML===arrymil[0].innerHTML){
+                                if(milie[j].innerHTML===arrymil[n].innerHTML){
                                     messje.classList.remove("hidden");
                                     return;
                                 }
                                 
                             }
-                milie[i].innerHTML=arrymil[0].innerHTML;
+                milie[i].innerHTML=arrymil[n].innerHTML;
             }
 
         }
-        }
-    function milieu2(){
-        for(let i=0;i<5;i++){
-            if(ml==i+1){
-                for(let j=0;j<5;j++){
-                    if(milie[j].innerHTML===arrymil[1].innerHTML){
-                        messje.classList.remove("hidden");
-                        return;
-                    }
-                    
-                }
-                milie[i].innerHTML=arrymil[1].innerHTML;
-            }
-        }
     }
-    function milieu3(){
-        for(let i=0;i<5;i++){
-            if(ml==i+1){
-                for(let j=0;j<5;j++){
-                    if(milie[j].innerHTML===arrymil[2].innerHTML){
-                        messje.classList.remove("hidden");
-                        return;
-                    }
-                    
-                }
-                milie[i].innerHTML=arrymil[2].innerHTML;
-            }
-        }
-        
+   let def;
+    function cheksowdefen(dev){
+        def=dev;
     }
-    function milieu4(){
-        for(let i=0;i<5;i++){
-            if(ml==i+1){
-                for(let j=0;j<5;j++){
-                    if(milie[j].innerHTML===arrymil[3].innerHTML){
-                        messje.classList.remove("hidden");
-                        return;
-                    }
-                    
-                }
-                milie[i].innerHTML=arrymil[3].innerHTML;
-            }
-        }
-        
-    }
-    function milieu5(){
-        for(let i=0;i<5;i++){
-            if(ml==i+1){
-                for(let j=0;j<5;j++){
-                    if(milie[j].innerHTML===arrymil[4].innerHTML){
-                        messje.classList.remove("hidden");
-                        return;
-                    }
-                    
-                }
-                milie[i].innerHTML=arrymil[4].innerHTML;
-            }
-        }
-    }
-    function milieu6(){
-        for(let i=0;i<5;i++){
-            if(ml==i+1){
-                for(let j=0;j<5;j++){
-                    if(milie[j].innerHTML===arrymil[5].innerHTML){
-                        messje.classList.remove("hidden");
-                        return;
-                    }
-                    
-                }
-                milie[i].innerHTML=arrymil[5].innerHTML;
-            }
-        }
-    }
-    let def=0;
-   
-    
-    function cheksowdefen1(){
-        def=1;
-    }
-    function cheksowdefen2(){
-        def=2;
-    }
-    function cheksowdefen3(){
-        def=3;
-    }
-    function cheksowdefen4(){
-        def=4;
-    }
-    function cheksowdefen5(){
-        def=5;
-    }
-    function cheksowdefen6(){
-        def=6;
-    }
+
 let messje=document.querySelector(".messje");
 let vardef1=document.querySelectorAll(".def")
 let vardefen=document.querySelectorAll(".defen");
 
-    function defen1(){
+    function defen(num){
         for(let i=0;i<6;i++){
             if(def==i+1){
                 for(let j=0;j<6;j++){
-                    if(vardefen[j].innerHTML===vardef1[0].innerHTML){
+                    if(vardefen[j].innerHTML===vardef1[num].innerHTML){
                         messje.classList.remove("hidden");
                         return;
                     }
@@ -243,202 +149,51 @@ let vardefen=document.querySelectorAll(".defen");
                     
                     
                 }
-                vardefen[i].innerHTML=vardef1[0].innerHTML;
+                vardefen[i].innerHTML=vardef1[num].innerHTML;
 
             }
         }
     }
-    function defen2(){
-        for(let i=0;i<6;i++){
-            if(def==i+1){
-                for(let j=0;j<6;j++){
-                    if(vardefen[j].innerHTML===vardef1[1].innerHTML){
-                        messje.classList.remove("hidden");
-                        return;
-                    }
-                    
-                }
-                vardefen[i].innerHTML=vardef1[1].innerHTML;
-        }
-    }
-}
-    function defen3(){
-        for(let i=0;i<6;i++){
-            if(def==i+1){
-                for(let j=0;j<6;j++){
-                    if(vardefen[j].innerHTML===vardef1[2].innerHTML){
-                        messje.classList.remove("hidden");
-                        return;
-                    }
-                    
-                }
-                vardefen[i].innerHTML=vardef1[2].innerHTML;
-            
-        }
-    }
-}
-    function defen4(){
-        for(let i=0;i<6;i++){
-            if(def==i+1){
 
-                for(let j=0;j<6;j++){
-                    if(vardefen[j].innerHTML===vardef1[3].innerHTML){
-                        messje.classList.remove("hidden");
-                        return;
-                    }
-                
-                }
-                vardefen[i].innerHTML=vardef1[3].innerHTML;
-            }
-            
-        }
-    }
-    function defen5(){
-        for(let i=0;i<6;i++){
-            if(def==i+1){
-                for(let j=0;j<6;j++){
-                    if(vardefen[j].innerHTML===vardef1[4].innerHTML){
-                        messje.classList.remove("hidden");
-                        return;
-                    }
-                    
-                }
-                vardefen[i].innerHTML=vardef1[4].innerHTML;
-            }
-        }
+let atc;
 
-    }
-    function defen6(){
-        for(let i=0;i<6;i++){
-            if(def==i+1){
-                for(let j=0;j<6;j++){
-                    if(vardefen[j].innerHTML===vardef1[5].innerHTML){
-                        messje.classList.remove("hidden");
-                        return;
-                    }
-                    
-                }
-                vardefen[i].innerHTML=vardef1[5].innerHTML;
-            }
-        }
-        
-    }
-    function defen7(){
-        for(let i=0;i<6;i++){
-            if(def==i+1){
-                for(let j=0;j<6;j++){
-                    if(vardefen[j].innerHTML===vardef1[6].innerHTML){
-                        messje.classList.remove("hidden");
-                        return;
-                    }
-                    
-                }
-                vardefen[i].innerHTML=vardef1[6].innerHTML;
-            }
-        }
-    }
-
-
-let atc=0;
-
-    function chekonclickatac1(){
-            atc=1;
-    }
-    function chekonclickatac2(){
-        atc=2;
-    }
-    function chekonclickatac3(){
-        atc=3;
-    }
-    function chekonclickatac4(){
-        atc=4;
+    function chekonclickatac(atco){
+            atc=atco;
     }
 
 let atco=document.querySelectorAll(".atc")
 let atccart=document.querySelectorAll(".atccart");
 let copycarte=[atccart[0].innerHTML,atccart[1].innerHTML,atccart[2].innerHTML,atccart[3].innerHTML];
+let r=[];
 
-    function atac1(){
+// Transferring attacker data to the pitch
+
+    function atac(num){
         for(let i=0;i<4;i++){
             if(atc==i+1){
                 for(let j=0;j<4;j++){
-                    if(atccart[j].innerHTML===atco[0].innerHTML){
+                    if(atccart[j].innerHTML===atco[num].innerHTML){
                         messje.classList.remove("hidden");
                         return;
                     }
                     
                 }
                 
-                atccart[i].innerHTML=atco[0].innerHTML;
+                atccart[i].innerHTML=atco[num].innerHTML;
+                r[num]=i;
                 }
         }
     }
-   
-// let copycarteatac2;
-// let r;
-    function atac2(){
-        for(let i=0;i<4;i++){
-            if(atc==i+1){
-                for(let j=0;j<4;j++){
-                    if((atccart[j].innerHTML)===atco[1].innerHTML){
-                        messje.classList.remove("hidden");
-                        return;
-                    }
-                }
-                atccart[i].innerHTML=atco[1].innerHTML;
-                r=i;
-            }
-        }
-    }
-    function copycart(){
-        atccart[r].innerHTML= copycarte[r];
-    }
-    function atac3(){
-        
-        for(let i=0;i<4;i++){
-            if(atc==i+1){
-                for(let j=0;j<4;j++){
-                    if(atccart[j].innerHTML===atco[2].innerHTML){
-                        messje.classList.remove("hidden");
-                        return;
-                    }
-                    
-                }
-                atccart[i].innerHTML=atco[2].innerHTML;
-            }
-        }
-    }
-    function atac4(){
-        for(let i=0;i<4;i++){
-            if(atc==i+1){
-                for(let j=0;j<4;j++){
-                    if(atccart[j].innerHTML===atco[3].innerHTML){
-                        messje.classList.remove("hidden");
-                        return;
-                    }
-                    
-                }
-                atccart[i].innerHTML=atco[3].innerHTML;
-            }
-        }
-    }
-    function atac5(){
-        for(let i=0;i<5;i++){
-            if(atc==i+1){
-                for(let j=0;j<5;j++){
-                    if(atccart[j].innerHTML===atco[4].innerHTML){
-                        messje.classList.remove("hidden");
-                        return;
-                    }
-                    
-                }
-                atccart[i].innerHTML=atco[4].innerHTML;
-            }
-        }
+
+// My Blank Cards Attackers :
+
+    function copycart(num){
+            atccart[r[num]].innerHTML= copycarte[r[num]];
     }
 
 let backgajout=document.querySelector(".ajout");
 let dabab=document.querySelector(".dabab");
+
     function btnajout(){
         backgajout.classList.remove('hidden')
         dabab.classList.add('blur-sm')
@@ -469,6 +224,7 @@ let w=6;
 let d=7;
 let dev;
 let blockajout=document.querySelector(".block-ajout");
+
     function creatplayer(){
         if(position.value==="GK"){
             if(i>2){
@@ -505,7 +261,7 @@ let blockajout=document.querySelector(".block-ajout");
                 blockajout.classList.remove('hidden')
                 return;
             }
-            hojo.innerHTML=` <div class="item w-[5rem] relative " onclick="atac${h}()">
+            hojo.innerHTML=` <div class="item w-[5rem] relative " onclick="atac('5')">
             <div class="absolute left-[0.7rem] top-[1.3rem]">
                 <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80 ">${rating.value}</h2>
                 <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
@@ -535,7 +291,7 @@ let blockajout=document.querySelector(".block-ajout");
                 blockajout.classList.remove('hidden')
                 return;
             }
-            wasat.innerHTML=` <div class="item w-[5rem] relative " onclick="milieu${w}()">
+            wasat.innerHTML=` <div class="item w-[5rem] relative " onclick="milieus('5')">
             <div class="absolute left-[0.7rem] top-[1.3rem]">
                 <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80 ">${rating.value}</h2>
                 <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
@@ -565,7 +321,7 @@ let blockajout=document.querySelector(".block-ajout");
                 blockajout.classList.remove('hidden')
                 return;
             }
-            difenc.innerHTML=` <div class="item w-[5rem] relative " onclick="defen${d}()">
+            difenc.innerHTML=` <div class="item w-[5rem] relative " onclick="defen('6')">
             <div class="absolute left-[0.7rem] top-[1.3rem]">
                 <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80 ">${rating.value}</h2>
                 <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
@@ -593,12 +349,11 @@ let blockajout=document.querySelector(".block-ajout");
         }
 
         
-        }
-
+    }
     function hiddentomessaje(){
         messje.classList.add("hidden");
     }
-    function hiddenblockajout(){
+    function hiddblockajout(){
         blockajout.classList.add('hidden')
     }
 
