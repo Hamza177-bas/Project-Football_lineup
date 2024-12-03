@@ -207,6 +207,8 @@ let ml=0;
         }
     }
     let def=0;
+   
+    
     function cheksowdefen1(){
         def=1;
     }
@@ -228,6 +230,7 @@ let ml=0;
 let messje=document.querySelector(".messje");
 let vardef1=document.querySelectorAll(".def")
 let vardefen=document.querySelectorAll(".defen");
+
     function defen1(){
         for(let i=0;i<6;i++){
             if(def==i+1){
@@ -353,6 +356,7 @@ let atc=0;
 
 let atco=document.querySelectorAll(".atc")
 let atccart=document.querySelectorAll(".atccart");
+let copycarte=[atccart[0].innerHTML,atccart[1].innerHTML,atccart[2].innerHTML,atccart[3].innerHTML];
 
     function atac1(){
         for(let i=0;i<4;i++){
@@ -364,25 +368,33 @@ let atccart=document.querySelectorAll(".atccart");
                     }
                     
                 }
+                
                 atccart[i].innerHTML=atco[0].innerHTML;
-            }
+                }
         }
     }
+   
+// let copycarteatac2;
+// let r;
     function atac2(){
         for(let i=0;i<4;i++){
             if(atc==i+1){
                 for(let j=0;j<4;j++){
-                    if(atccart[j].innerHTML===atco[1].innerHTML){
+                    if((atccart[j].innerHTML)===atco[1].innerHTML){
                         messje.classList.remove("hidden");
                         return;
                     }
-                    
                 }
                 atccart[i].innerHTML=atco[1].innerHTML;
+                r=i;
             }
         }
     }
+    function copycart(){
+        atccart[r].innerHTML= copycarte[r];
+    }
     function atac3(){
+        
         for(let i=0;i<4;i++){
             if(atc==i+1){
                 for(let j=0;j<4;j++){
@@ -589,5 +601,6 @@ let blockajout=document.querySelector(".block-ajout");
     function hiddenblockajout(){
         blockajout.classList.add('hidden')
     }
+
 
 
