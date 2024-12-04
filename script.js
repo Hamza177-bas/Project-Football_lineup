@@ -238,6 +238,19 @@ let haris=document.querySelector(".haris");
 let hojo=document.querySelector(".hojo");
 let wasat=document.querySelector(".wasat");
 let difenc=document.querySelector(".defense");
+let playerGard=document.querySelector(".playerGard");
+let playerNoGard=document.querySelector(".playerNoGard");
+
+function chengestatistike(){
+    if(position.value==='GK'){
+        playerGard.classList.remove('hidden');
+        playerNoGard.classList.add('hidden');
+    }else{
+        playerGard.classList.add('hidden');
+        playerNoGard.classList.remove('hidden');
+    }d
+}
+
 let i=2;
 let h=5;
 let w=6;
@@ -251,6 +264,7 @@ let blockajout=document.querySelector(".block-ajout");
                 blockajout.classList.remove('hidden')
                 return;
             }
+
             haris.innerHTML=` <div class="item w-[5rem] relative " onclick="buttongk${i}()">
                                             <div class="absolute left-[0.7rem] top-[1.3rem]">
                                                 <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80 ">${rating.value}</h2>
@@ -262,14 +276,14 @@ let blockajout=document.querySelector(".block-ajout");
                                             <p class="positionPlayer">${position.value}</p>
                                             <div class="flex text-[#fff] text-[5px] absolute bottom-5 right-4 gap-[0.5rem] opacity-80">
                                                 <div>
-                                                    <h3>Pac :<span class="pasPlayer">${pac.value}</span></h3>
-                                                    <h3>Sho : <span class="ShoPlayer">${sho.value}</span></h3>
-                                                    <h3>Pas : <span class="PasPlayer">${pas.value}</span></h3>
+                                                    <h3>Div :<span class="pasPlayer">${pac.value}</span></h3>
+                                                    <h3>Han : <span class="ShoPlayer">${sho.value}</span></h3>
+                                                    <h3>Kic : <span class="PasPlayer">${pas.value}</span></h3>
                                                 </div>
                                                 <div>
-                                                    <h3>Dri : <span class="DriPlayer">${dri.value}</span></h3>
-                                                    <h3>Def : <span class="DefPlayer">${defplayer.value}</span></h3>
-                                                    <h3>Phy : <span class="PhyPlayer">${phy.value}</span></h3>
+                                                    <h3>Ref : <span class="DriPlayer">${dri.value}</span></h3>
+                                                    <h3>Spo : <span class="DefPlayer">${defplayer.value}</span></h3>
+                                                    <h3>Pos : <span class="PhyPlayer">${phy.value}</span></h3>
                                                 </div>
                                                 </div>
                                             </div>`
@@ -376,3 +390,4 @@ let blockajout=document.querySelector(".block-ajout");
     function hiddblockajout(){
         blockajout.classList.add('hidden')
     }
+    
