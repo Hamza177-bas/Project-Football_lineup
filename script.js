@@ -250,144 +250,188 @@ function chengestatistike(){
         playerNoGard.classList.remove('hidden');
     }d
 }
-
 let i=2;
 let h=5;
 let w=6;
 let d=7;
 let dev;
 let blockajout=document.querySelector(".block-ajout");
-
-    function creatplayer(){
-        if(position.value==="GK"){
-            if(i>2){
-                blockajout.classList.remove('hidden')
-                return;
-            }
-
-            haris.innerHTML=` <div class="item w-[5rem] relative " onclick="buttongk${i}()">
-                                            <div class="absolute left-[0.7rem] top-[1.3rem]">
-                                                <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80 ">${rating.value}</h2>
-                                                <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
-                                                <img src="img-fotball/logo-AS-Roma-removebg-preview.png" alt="" class="w-[0.7rem]  opacity-60 ml-[2px]">
-                                            </div>
-                                             <img src="img-fotball/img-create-player-removebg-preview (2).png" alt="" class="w-[4rem]  absolute bottom-[2.5rem] left-[0.6rem]">
-                                            <h2 class="text-[#fff] text-[7px] font-bold absolute left-[1.6rem] top-[0.6rem] opacity-80 NamePlayer">${name.value}</h2>
-                                            <p class="positionPlayer">${position.value}</p>
-                                            <div class="flex text-[#fff] text-[5px] absolute bottom-5 right-4 gap-[0.5rem] opacity-80">
-                                                <div>
-                                                    <h3>Div :<span class="pasPlayer">${pac.value}</span></h3>
-                                                    <h3>Han : <span class="ShoPlayer">${sho.value}</span></h3>
-                                                    <h3>Kic : <span class="PasPlayer">${pas.value}</span></h3>
-                                                </div>
-                                                <div>
-                                                    <h3>Ref : <span class="DriPlayer">${dri.value}</span></h3>
-                                                    <h3>Spo : <span class="DefPlayer">${defplayer.value}</span></h3>
-                                                    <h3>Pos : <span class="PhyPlayer">${phy.value}</span></h3>
-                                                </div>
-                                                </div>
-                                            </div>`
-                                            backgajout.classList.add('hidden')
-                                            dabab.classList.remove('blur-sm')
-                                            i++;
-        }else if(position.value==="ST"||position.value==="LW"||position.value==="RW"){
-            if(h>5){
-                blockajout.classList.remove('hidden')
-                return;
-            }
-            hojo.innerHTML=` <div class="item w-[5rem] relative " onclick="atac('5')">
-            <div class="absolute left-[0.7rem] top-[1.3rem]">
-                <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80 ">${rating.value}</h2>
-                <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
-                <img src="img-fotball/logo-AS-Roma-removebg-preview.png" alt="" class="w-[0.7rem]  opacity-60 ml-[2px]">
-            </div>
-            <img src="img-fotball/img-create-player-removebg-preview (2).png" alt="" class="w-[4rem]  absolute bottom-[2.5rem] left-[0.6rem]">
-            <h2 class="text-[#fff] text-[7px] font-bold absolute left-[1.6rem] top-[0.6rem] opacity-80 NamePlayer">${name.value}</h2>
-            <p class="positionPlayer">${position.value}</p>
-            <div class="flex text-[#fff] text-[5px] absolute bottom-5 right-4 gap-[0.5rem] opacity-80">
-                <div>
-                    <h3>Pac :<span class="pasPlayer">${pac.value}</span></h3>
-                    <h3>Sho : <span class="ShoPlayer">${sho.value}</span></h3>
-                    <h3>Pas : <span class="PasPlayer">${pas.value}</span></h3>
-                </div>
-                <div>
-                    <h3>Dri : <span class="DriPlayer">${dri.value}</span></h3>
-                    <h3>Def : <span class="DefPlayer">${defplayer.value}</span></h3>
-                    <h3>Phy : <span class="PhyPlayer">${phy.value}</span></h3>
-                </div>
-                </div>
-            </div>`
-            backgajout.classList.add('hidden')
-            dabab.classList.remove('blur-sm')
-            h++;
-        }else if(position.value==="CM"){
-            if(w>6){
-                blockajout.classList.remove('hidden')
-                return;
-            }
-            wasat.innerHTML=` <div class="item w-[5rem] relative " onclick="milieus('5')">
-            <div class="absolute left-[0.7rem] top-[1.3rem]">
-                <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80 ">${rating.value}</h2>
-                <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
-                <img src="img-fotball/logo-AS-Roma-removebg-preview.png" alt="" class="w-[0.7rem]  opacity-60 ml-[2px]">
-            </div>
-            <img src="img-fotball/img-create-player-removebg-preview (2).png" alt="" class="w-[4rem]  absolute bottom-[2.5rem] left-[0.6rem]">
-            <h2 class="text-[#fff] text-[7px] font-bold absolute left-[1.6rem] top-[0.6rem] opacity-80 NamePlayer">${name.value}</h2>
-            <p class="positionPlayer">${position.value}</p>
-            <div class="flex text-[#fff] text-[5px] absolute bottom-5 right-4 gap-[0.5rem] opacity-80">
-                <div>
-                    <h3>Pac :<span class="pasPlayer">${pac.value}</span></h3>
-                    <h3>Sho : <span class="ShoPlayer">${sho.value}</span></h3>
-                    <h3>Pas : <span class="PasPlayer">${pas.value}</span></h3>
-                </div>
-                <div>
-                    <h3>Dri : <span class="DriPlayer">${dri.value}</span></h3>
-                    <h3>Def : <span class="DefPlayer">${defplayer.value}</span></h3>
-                    <h3>Phy : <span class="PhyPlayer">${phy.value}</span></h3>
-                </div>
-                </div>
-            </div>`
-            backgajout.classList.add('hidden')
-            dabab.classList.remove('blur-sm')
-            w++;
-        }else if(position.value==="CB"||position.value==="LB"||position.value==="RB"){
-            if(d>7){
-                blockajout.classList.remove('hidden')
-                return;
-            }
-            difenc.innerHTML=` <div class="item w-[5rem] relative " onclick="defen('6')">
-            <div class="absolute left-[0.7rem] top-[1.3rem]">
-                <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80 ">${rating.value}</h2>
-                <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
-                <img src="img-fotball/logo-AS-Roma-removebg-preview.png" alt="" class="w-[0.7rem]  opacity-60 ml-[2px]">
-            </div>
-             <img src="img-fotball/img-create-player-removebg-preview (2).png" alt="" class="w-[3.8rem]  absolute bottom-[2.5rem] left-[0.6rem]">
-            <h2 class="text-[#fff] text-[7px] font-bold absolute left-[1.6rem] top-[0.6rem] opacity-80 NamePlayer">${name.value}</h2>
-            <p class="positionPlayer">${position.value}</p>
-            <div class="flex text-[#fff] text-[5px] absolute bottom-5 right-4 gap-[0.5rem] opacity-80">
-                <div>
-                    <h3>Pac :<span class="pasPlayer">${pac.value}</span></h3>
-                    <h3>Sho : <span class="ShoPlayer">${sho.value}</span></h3>
-                    <h3>Pas : <span class="PasPlayer">${pas.value}</span></h3>
-                </div>
-                <div>
-                    <h3>Dri : <span class="DriPlayer">${dri.value}</span></h3>
-                    <h3>Def : <span class="DefPlayer">${defplayer.value}</span></h3>
-                    <h3>Phy : <span class="PhyPlayer">${phy.value}</span></h3>
-                </div>
-                </div>
-            </div>`
-            backgajout.classList.add('hidden')
-            dabab.classList.remove('blur-sm')
-            d++;
-        }
-
-        
+let ched=0;
+function regex(){
+    
+    if(/^\d{1,2}$/.test(rating.value)!= true){
+        alert("NUMBER 1 TO 99  ");
+        backgajout.classList.remove('hidden')
+        ched=1
+        return;
     }
+    if(/^\d{1,2}$/.test(pas.value) != true){
+        alert("NUMBER 1 TO 99 ")
+        backgajout.classList.remove('hidden')
+        ched=1
+        return;
+    }
+    if(/^\d{1,2}$/.test(dri.value) != true){
+        alert("NUMBER 1 TO 99 ")
+        backgajout.classList.remove('hidden')
+        ched=1
+        return;
+    }
+    if(/^\d{1,2}$/.test(phy.value) != true){
+        alert("NUMBER 1 TO 99 ")
+        backgajout.classList.remove('hidden')
+        ched=1
+        return;
+    }
+    if(/^\d{1,2}$/.test(pac.value) != true){
+        alert("NUMBER 1 TO 99 ")
+        backgajout.classList.remove('hidden')
+        ched=1
+        return;
+    }
+    if(/^\d{1,2}$/.test(sho.value) != true){
+        alert("NUMBER 1 TO 99 ")
+        backgajout.classList.remove('hidden')
+        ched=1
+        return;
+    }
+    if(/^\d{1,2}$/.test(defplayer.value) != true){
+        alert("NUMBER 1 TO 99 ")
+        backgajout.classList.remove('hidden')
+        ched=1
+        return;
+    }
+    backgajout.classList.add('hidden')
+}
+    function creatplayer(){
+        if(ched!==1){
+            if(position.value==="GK"){
+                if(i>2){
+                    blockajout.classList.remove('hidden')
+                    return;
+                }
+        
+                haris.innerHTML=` <div class="item w-[5rem] relative " onclick="buttongk${i}()">
+                                                <div class="absolute left-[0.7rem] top-[1.3rem]">
+                                                    <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80 ">${rating.value}</h2>
+                                                    <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
+                                                    <img src="img-fotball/logo-AS-Roma-removebg-preview.png" alt="" class="w-[0.7rem]  opacity-60 ml-[2px]">
+                                                </div>
+                                                 <img src="img-fotball/img-create-player-removebg-preview (2).png" alt="" class="w-[4rem]  absolute bottom-[2.5rem] left-[0.6rem]">
+                                                <h2 class="text-[#fff] text-[7px] font-bold absolute left-[1.6rem] top-[0.6rem] opacity-80 NamePlayer">${name.value}</h2>
+                                                <p class="positionPlayer">${position.value}</p>
+                                                <div class="flex text-[#fff] text-[5px] absolute bottom-5 right-4 gap-[0.5rem] opacity-80">
+                                                    <div>
+                                                        <h3>Div :<span class="pasPlayer">${pac.value}</span></h3>
+                                                        <h3>Han : <span class="ShoPlayer">${sho.value}</span></h3>
+                                                        <h3>Kic : <span class="PasPlayer">${pas.value}</span></h3>
+                                                    </div>
+                                                    <div>
+                                                        <h3>Ref : <span class="DriPlayer">${dri.value}</span></h3>
+                                                        <h3>Spo : <span class="DefPlayer">${defplayer.value}</span></h3>
+                                                        <h3>Pos : <span class="PhyPlayer">${phy.value}</span></h3>
+                                                    </div>
+                                                    </div>
+                                                </div>`
+                                                backgajout.classList.add('hidden')
+                                                dabab.classList.remove('blur-sm')
+                                                i++;
+            }else if(position.value==="ST"||position.value==="LW"||position.value==="RW"){
+                if(h>5){
+                    blockajout.classList.remove('hidden')
+                    return;
+                }
+                hojo.innerHTML=` <div class="item w-[5rem] relative " onclick="atac('5')">
+                <div class="absolute left-[0.7rem] top-[1.3rem]">
+                    <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80 ">${rating.value}</h2>
+                    <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
+                    <img src="img-fotball/logo-AS-Roma-removebg-preview.png" alt="" class="w-[0.7rem]  opacity-60 ml-[2px]">
+                </div>
+                <img src="img-fotball/img-create-player-removebg-preview (2).png" alt="" class="w-[4rem]  absolute bottom-[2.5rem] left-[0.6rem]">
+                <h2 class="text-[#fff] text-[7px] font-bold absolute left-[1.6rem] top-[0.6rem] opacity-80 NamePlayer">${name.value}</h2>
+                <p class="positionPlayer">${position.value}</p>
+                <div class="flex text-[#fff] text-[5px] absolute bottom-5 right-4 gap-[0.5rem] opacity-80">
+                    <div>
+                        <h3>Pac :<span class="pasPlayer">${pac.value}</span></h3>
+                        <h3>Sho : <span class="ShoPlayer">${sho.value}</span></h3>
+                        <h3>Pas : <span class="PasPlayer">${pas.value}</span></h3>
+                    </div>
+                    <div>
+                        <h3>Dri : <span class="DriPlayer">${dri.value}</span></h3>
+                        <h3>Def : <span class="DefPlayer">${defplayer.value}</span></h3>
+                        <h3>Phy : <span class="PhyPlayer">${phy.value}</span></h3>
+                    </div>
+                    </div>
+                </div>`
+                backgajout.classList.add('hidden')
+                dabab.classList.remove('blur-sm')
+                h++;
+            }else if(position.value==="CM"){
+                if(w>6){
+                    blockajout.classList.remove('hidden')
+                    return;
+                }
+                wasat.innerHTML=` <div class="item w-[5rem] relative " onclick="milieus('5')">
+                <div class="absolute left-[0.7rem] top-[1.3rem]">
+                    <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80 ">${rating.value}</h2>
+                    <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
+                    <img src="img-fotball/logo-AS-Roma-removebg-preview.png" alt="" class="w-[0.7rem]  opacity-60 ml-[2px]">
+                </div>
+                <img src="img-fotball/img-create-player-removebg-preview (2).png" alt="" class="w-[4rem]  absolute bottom-[2.5rem] left-[0.6rem]">
+                <h2 class="text-[#fff] text-[7px] font-bold absolute left-[1.6rem] top-[0.6rem] opacity-80 NamePlayer">${name.value}</h2>
+                <p class="positionPlayer">${position.value}</p>
+                <div class="flex text-[#fff] text-[5px] absolute bottom-5 right-4 gap-[0.5rem] opacity-80">
+                    <div>
+                        <h3>Pac :<span class="pasPlayer">${pac.value}</span></h3>
+                        <h3>Sho : <span class="ShoPlayer">${sho.value}</span></h3>
+                        <h3>Pas : <span class="PasPlayer">${pas.value}</span></h3>
+                    </div>
+                    <div>
+                        <h3>Dri : <span class="DriPlayer">${dri.value}</span></h3>
+                        <h3>Def : <span class="DefPlayer">${defplayer.value}</span></h3>
+                        <h3>Phy : <span class="PhyPlayer">${phy.value}</span></h3>
+                    </div>
+                    </div>
+                </div>`
+                backgajout.classList.add('hidden')
+                dabab.classList.remove('blur-sm')
+                w++;
+            }else if(position.value==="CB"||position.value==="LB"||position.value==="RB"){
+                if(d>7){
+                    blockajout.classList.remove('hidden')
+                    return;
+                }
+                difenc.innerHTML=` <div class="item w-[5rem] relative " onclick="defen('6')">
+                <div class="absolute left-[0.7rem] top-[1.3rem]">
+                    <h2 class="text-[#fff] text-[7px] ml-[4px] font-bold opacity-80 ">${rating.value}</h2>
+                    <img src="img-fotball/drabo-card-removebg-preview.png" alt="" class="w-[1rem] opacity-80 ">
+                    <img src="img-fotball/logo-AS-Roma-removebg-preview.png" alt="" class="w-[0.7rem]  opacity-60 ml-[2px]">
+                </div>
+                 <img src="img-fotball/img-create-player-removebg-preview (2).png" alt="" class="w-[3.8rem]  absolute bottom-[2.5rem] left-[0.6rem]">
+                <h2 class="text-[#fff] text-[7px] font-bold absolute left-[1.6rem] top-[0.6rem] opacity-80 NamePlayer">${name.value}</h2>
+                <p class="positionPlayer">${position.value}</p>
+                <div class="flex text-[#fff] text-[5px] absolute bottom-5 right-4 gap-[0.5rem] opacity-80">
+                    <div>
+                        <h3>Pac :<span class="pasPlayer">${pac.value}</span></h3>
+                        <h3>Sho : <span class="ShoPlayer">${sho.value}</span></h3>
+                        <h3>Pas : <span class="PasPlayer">${pas.value}</span></h3>
+                    </div>
+                    <div>
+                        <h3>Dri : <span class="DriPlayer">${dri.value}</span></h3>
+                        <h3>Def : <span class="DefPlayer">${defplayer.value}</span></h3>
+                        <h3>Phy : <span class="PhyPlayer">${phy.value}</span></h3>
+                    </div>
+                    </div>
+                </div>`
+                backgajout.classList.add('hidden')
+                dabab.classList.remove('blur-sm')
+                d++;
+            }
+        }
+        }
     function hiddentomessaje(){
         messje.classList.add("hidden");
     }
     function hiddblockajout(){
         blockajout.classList.add('hidden')
     }
-    
