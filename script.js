@@ -24,7 +24,6 @@ let currentIndex = 0;
 
     }
 setInterval(showNextImage, 2000);
-
 let cardts=document.querySelector(".cardts")
 let hojom=document.querySelector(".atac")
 let milieu=document.querySelector(".milieu")
@@ -52,15 +51,16 @@ let a=document.querySelectorAll(".gk");
 let car=document.querySelector('.car');
 let car1=document.querySelector('.car1');
 let c=0;
+let copycartegard=[car.innerHTML,car1.innerHTML];
 
-    function chek(rs){
-       c=2;
+    function chek(){
+       c=0;
     }
     function chek1(){
         c=1;
     }
     function buttongk(){
-        if(c===2){
+        if(c===0){
             car.innerHTML=a[0].innerHTML;
             a[0].style.display="none"
             a[1].style.display="block"
@@ -73,7 +73,7 @@ let c=0;
         }
     }
     function buttongk1(){
-        if(c===2){
+        if(c===0){
             car.innerHTML=a[1].innerHTML
             a[1].style.display="none"
             a[0].style.display="block"
@@ -86,7 +86,7 @@ let c=0;
         }
     }
     function buttongk2(){
-        if(c===2){
+        if(c===0){
             car.innerHTML=a[2].innerHTML
             a[2].style.display="none"
             a[1].style.display="block"
@@ -98,7 +98,15 @@ let c=0;
             a[0].style.display="block"
         }
     }
-
+    // function copycartgard(){
+    //     if(c===1){
+    //         car1.innerHTML=copycartegard[1];
+    //     }else if(c===0){
+    //         car.innerHTML=copycartegard[0];
+    //     }
+    // }
+ 
+    
 let milie=document.querySelectorAll(".micm");
 let mil1=document.querySelector(".mil1");
 let mil2=document.querySelector(".mil2");
@@ -108,25 +116,32 @@ let mil5=document.querySelector(".mil5");
 let mil6=document.querySelector(".mil6");
 let arrymil=[mil1,mil2,mil3,mil4,mil5,mil6];
 let ml=0;
+let copycartemile=[milie[0].innerHTML,milie[1].innerHTML,milie[2].innerHTML,milie[3].innerHTML,milie[4].innerHTML];
+
+// // function chek position 
 
     function cheksowmil(mil){
         ml=mil;
     }
-    function milieus(n){
-        
-        for(let i=0;i<5;i++){
+let rmil=[];
+    function milieus(num){
+        for(let i=0;i<6;i++){
             if(ml==i+1){
                 for(let j=0;j<5;j++){
-                                if(milie[j].innerHTML===arrymil[n].innerHTML){
+                                if(milie[j].innerHTML===arrymil[num].innerHTML){
                                     messje.classList.remove("hidden");
                                     return;
                                 }
                                 
                             }
-                milie[i].innerHTML=arrymil[n].innerHTML;
+                milie[i].innerHTML=arrymil[num].innerHTML;
+                rmil[num]=i
             }
 
         }
+    }
+    function copycartmil(num){
+        milie[rmil[num]].innerHTML = copycartemile[rmil[num]];
     }
    let def;
     function cheksowdefen(dev){
@@ -136,6 +151,8 @@ let ml=0;
 let messje=document.querySelector(".messje");
 let vardef1=document.querySelectorAll(".def")
 let vardefen=document.querySelectorAll(".defen");
+let copycartedefen=[vardefen[0].innerHTML,vardefen[1].innerHTML,vardefen[2].innerHTML,vardefen[3].innerHTML,vardefen[4].innerHTML,vardefen[5].innerHTML];
+let rdef=[];
 
     function defen(num){
         for(let i=0;i<6;i++){
@@ -150,11 +167,14 @@ let vardefen=document.querySelectorAll(".defen");
                     
                 }
                 vardefen[i].innerHTML=vardef1[num].innerHTML;
-
+                rdef[num]=i;
             }
         }
     }
 
+function copycartdefen(num){
+    vardefen[rdef[num]].innerHTML= copycartedefen[rdef[num]];
+}
 let atc;
 
     function chekonclickatac(atco){
@@ -163,7 +183,7 @@ let atc;
 
 let atco=document.querySelectorAll(".atc")
 let atccart=document.querySelectorAll(".atccart");
-let copycarte=[atccart[0].innerHTML,atccart[1].innerHTML,atccart[2].innerHTML,atccart[3].innerHTML];
+let copycarteatac=[atccart[0].innerHTML,atccart[1].innerHTML,atccart[2].innerHTML,atccart[3].innerHTML];
 let r=[];
 
 // Transferring attacker data to the pitch
@@ -176,7 +196,7 @@ let r=[];
                         messje.classList.remove("hidden");
                         return;
                     }
-                    
+                
                 }
                 
                 atccart[i].innerHTML=atco[num].innerHTML;
@@ -188,7 +208,7 @@ let r=[];
 // My Blank Cards Attackers :
 
     function copycart(num){
-            atccart[r[num]].innerHTML= copycarte[r[num]];
+            atccart[r[num]].innerHTML= copycarteatac[r[num]];
     }
 
 let backgajout=document.querySelector(".ajout");
@@ -356,6 +376,3 @@ let blockajout=document.querySelector(".block-ajout");
     function hiddblockajout(){
         blockajout.classList.add('hidden')
     }
-
-
-
